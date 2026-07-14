@@ -1,0 +1,101 @@
+[
+  {
+    "number": 1,
+    "playerId": "lanzoni",
+    "name": "A. Lanzoni",
+    "role": "Portiere",
+    "description": "Figlio di mr. Marco. Alterna parate fenomenali a momenti di pura paura e follia. Appassionato di schedine, sogna di aprire un casinò tutto suo.",
+    "unlockDate": "2026-08-22",
+    "image": "lanzoni"
+  },
+  {
+    "number": 2,
+    "playerId": "cendamo",
+    "name": "A. Cendamo",
+    "role": "Portiere",
+    "description": "Figlio di mr. Nino e conduttore del podcast 'Ma il Cenda è sempre Fallu'. Passa le giornate a fare TikTok e ad allenarsi per tornare in forma.",
+    "unlockDate": "2026-08-29",
+    "image": "cendamo"
+  },
+  {
+    "number": 3,
+    "playerId": "galli",
+    "name": "F. Galli",
+    "role": "Difensore",
+    "description": "Figlio del pres (sì, pure lui è raccomandato) e terzino destro di spinta. Ingegnere matematico, alza il QI della squadra di almeno venti punti percentuali.",
+    "unlockDate": "2026-09-05",
+    "image": "galli"
+  },
+  {
+    "number": 4,
+    "playerId": "brichetti",
+    "name": "L. Brichetti",
+    "role": "Difensore",
+    "description": "Terzino e difensore centrale all'occorrenza. Può giocare letteralmente ovunque, basta che non debba tirare in porta — l'ultimo suo gol risale infatti a un torneo delle elementari.",
+    "unlockDate": "2026-09-10",
+    "image": "brichetti"
+  },
+  {
+    "number": 5,
+    "playerId": "campi",
+    "name": "A. Campi",
+    "role": "Difensore",
+    "description": "Pendolino inarrestabile. Da piccolo faceva l'esterno alto e segnava almeno trenta gol a stagione — di quei ragazzo ormai ne rimane solo il ricordo.",
+    "unlockDate": "2026-10-01",
+    "image": "campi"
+  },
+  {
+    "number": 6,
+    "playerId": "iannace",
+    "name": "F. Iannace",
+    "role": "Difensore",
+    "description": "Il giocatore per cui andresti in guerra. Quando gioca sembra un misto tra Zanetti sotto steroidi e Lichsteiner prime. Insegna educazione fisica per un motivo.",
+    "unlockDate": "2026-10-08",
+    "image": "iannace"
+  },
+  {
+    "number": 7,
+    "playerId": "nava-mark",
+    "name": "M. Nava",
+    "role": "Difensore",
+    "description": "In arrivo — pokedex ancora da disegnare.",
+    "unlockDate": "2026-10-24",
+    "locked": true
+  },
+  {
+    "number": 8,
+    "playerId": "semanaj",
+    "name": "D. Semanaj",
+    "role": "Difensore",
+    "description": "In arrivo — pokedex ancora da disegnare.",
+    "unlockDate": "2026-10-15",
+    "locked": true
+  },
+  {
+    "number": 9,
+    "playerId": "cazzaniga",
+    "name": "M. Cazzaniga",
+    "role": "Difensore",
+    "description": "In arrivo — pokedex ancora da disegnare.",
+    "unlockDate": "2026-10-01",
+    "locked": true
+  },
+  {
+    "number": 10,
+    "playerId": "laporta",
+    "name": "T. Laporta",
+    "role": "Difensore",
+    "description": "In arrivo — pokedex ancora da disegnare.",
+    "unlockDate": "2026-10-08",
+    "locked": true
+  },
+  {
+    "number": 11,
+    "playerId": "longoni",
+    "name": "Longoni",
+    "role": "Difensore",
+    "description": "In arrivo — pokedex ancora da disegnare. (fine difensori)",
+    "unlockDate": "2026-10-29",
+    "locked": true
+  }
+]

@@ -1,0 +1,25 @@
+{
+  "name": "Nuova Amatese Calcio A.S.D.",
+  "mission": "Inseguire quel pallone è il sogno più bello. Fallo diventare realtà.",
+  "tagline": "Vieni a giocare da noi!",
+  "rentField": {
+    "title": "Affitta il nuovo campo a 5",
+    "description": "Prenota il campo a 5 per giocare con i tuoi amici."
+  },
+  "contacts": {
+    "phones": ["338 4997773", "392 8322525"],
+    "email": "segreteria@nuovaamatesecalcio.it",
+    "secretaryHours": "Martedì, Mercoledì e Giovedì dalle 18:00 alle 20:00"
+  },
+  "locations": [
+    { "label": "Entrata Campi Calcio", "address": "Via Dalmazia, Cassina Amata di Paderno Dugnano (MI)" },
+    { "label": "Ingresso secondario", "address": "Via Giuseppe Cottolengo, Cassina Amata di Paderno Dugnano (MI)" },
+    { "label": "Campo gare", "address": "Via Don Arrigoni, Cassina Amata, 20037 Paderno Dugnano (MI)" }
+  ],
+  "social": {
+    "instagram": "https://www.instagram.com/nuova_amatese_calcio/",
+    "facebook": "https://www.facebook.com/Nuova-Amatese-Calcio-asd-100057256817996/",
+    "tiktok": "https://www.tiktok.com/@nuova.amatese.calcio"
+  },
+  "legal": "Partita Iva 08389340962 – Codice Fiscale 91112770150"
+}

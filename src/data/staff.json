@@ -1,0 +1,6 @@
+[
+  { "id": "loris", "name": "Loris", "role": "Custode del campo", "bio": "Trent'anni sul campo dell'Amatese. Parla poco, minaccia molto, sa più di quanto dica." },
+  { "id": "marco", "name": "Marco", "role": "Vice-allenatore", "bio": "Ossessionato dalla corsa e dai 'cinesini'. Cita Murakami senza averlo capito fino in fondo." },
+  { "id": "pres", "name": "Il Presidente", "role": "Presidente della società", "bio": "Paga stipendi, divise e trasferte. Anche qualche silenzio che avrebbe preferito restasse tale." },
+  { "id": "nino", "name": "Nino", "role": "Il protagonista silenzioso", "bio": "Non dice mai una parola. Eppure ogni scena gira intorno a lui." }
+]

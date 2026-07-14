@@ -1,0 +1,21 @@
+:root {
+  /* Color: team pitch + GameBoy-screen accent, grounded in the source material */
+  --ink: #16210f;              /* near-black green-ink for body text */
+  --pitch: #1b4332;            /* deep matchday green, panels/nav */
+  --pitch-dark: #0f2a20;       /* darker panel/hover */
+  --pixel-green: #9bbc0f;      /* GameBoy screen green — "unlocked" accent */
+  --pixel-dark: #0f380f;       /* GameBoy darkest green — screen background */
+  --pixel-mid: #306230;        /* GameBoy mid green */
+  --amatese-yellow: #f2c94c;   /* team yellow */
+  --paper: #f7f1de;            /* cream, pokedex card stock */
+  --paper-line: #dcd2ac;       /* hairline on paper */
+  --locked: #6b6f63;           /* locked/static grey-green */
+  --alert: #d64550;            /* AURA / Momo commentary accent */
+
+  --font-display: 'Press Start 2P', monospace;
+  --font-body: 'Space Grotesk', system-ui, sans-serif;
+  --font-mono: 'IBM Plex Mono', ui-monospace, monospace;
+
+  --radius-card: 10px;
+  --shadow-card: 0 4px 0 rgba(15, 42, 32, 0.25);
+}
