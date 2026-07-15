@@ -25,11 +25,10 @@ const podcasts = withUnlockState(podcastsRaw, 'date').slice().reverse()
       <button role="tab" :aria-selected="tab === 'storia'" :class="{ active: tab === 'storia' }" @click="setTab('storia')">
         📖 Storia
       </button>
-      <!--
+      
       <button role="tab" :aria-selected="tab === 'podcast'" :class="{ active: tab === 'podcast' }" @click="setTab('podcast')">
         🎙️ Podcast
       </button>
-    -->
     </div>
 
     <div v-if="tab === 'storia'" class="tab-panel">

@@ -4,8 +4,8 @@ import club from './data/club.json'
 import amateseImg from './assets/images/amatese.png'
 
 const navOpen = ref(false)
-//{ to: '/squadra', label: 'Prima Squadra' },
 const links = [
+  { to: '/squadra', label: 'Prima Squadra' },
   { to: '/serie', label: 'La Serie' },
 ]
 </script>

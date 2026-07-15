@@ -28,7 +28,9 @@ function openCard(playerId) {
     <h1>Prima Squadra</h1>
 
     <div class="group">
-       <h2 class="group-title">Staff</h2>
+
+       <h2 class="group-title">Prossimamente...</h2>
+    </div> <!--
     <div class="grid">
       <article v-for="s in staff" :key="s.id" class="player pixel-border staff-card">
         <p class="player-name">{{ s.name }}</p>
@@ -58,7 +60,7 @@ function openCard(playerId) {
           </template>
         </article>
       </div>
-
+    -->
     <PokedexModal :card="activeCard" @close="activeCard = null" />
   </section>
 </template>
