@@ -1,5 +1,5 @@
 <script setup>
-import { computed } from 'vue'
+import { computed, ref } from 'vue'
 import episodesRaw from '../data/episodes.json'
 import podcastsRaw from '../data/podcasts.json'
 import club from '../data/club.json'
@@ -9,6 +9,8 @@ import amateseImg from '../assets/images/amatese.png'
 
 const episodes = withUnlockState(episodesRaw, 'date')
 const podcasts = withUnlockState(podcastsRaw, 'date')
+
+const heroImageLoaded = ref(false)
 
 const latestUnlocked = computed(() => {
   const all = [
@@ -33,7 +35,23 @@ const latestUnlocked = computed(() => {
           <router-link class="btn btn-alt" to="/dove-siamo">dove siamo</router-link>
         </div>
       </div>
-      <img class="hero-image" :src="spogliatoioImg" alt="Scena disegnata dello spogliatoio dell'Amatese con lo staff riunito" />
+      <div class="hero-image-wrap">
+        <div v-if="!heroImageLoaded" class="pokeball-loader" aria-label="Caricamento immagine">
+          <div class="pokeball">
+            <div class="pokeball-top"></div>
+            <div class="pokeball-band"></div>
+            <div class="pokeball-bottom"></div>
+            <div class="pokeball-button"></div>
+          </div>
+        </div>
+        <img
+          class="hero-image"
+          :class="{ 'is-loaded': heroImageLoaded }"
+          :src="spogliatoioImg"
+          alt="Scena disegnata dello spogliatoio dell'Amatese con lo staff riunito"
+          @load="heroImageLoaded = true"
+        />
+      </div>
     </div>
   </section>
 
@@ -116,12 +134,87 @@ const latestUnlocked = computed(() => {
    width: 25%;
   object-fit: cover;
 }
+.hero-image-wrap {
+  position: relative;
+  width: 100%;
+  height: 100%;
+  min-height: 220px;
+  border-radius: var(--radius-card);
+  border: 3px solid var(--pixel-dark);
+  overflow: hidden;
+  background: var(--pitch);
+}
 .hero-image {
   width: 100%;
   height: 100%;
   object-fit: cover;
-  border-radius: var(--radius-card);
-  border: 3px solid var(--pixel-dark);
+  display: block;
+  opacity: 0;
+  transition: opacity 0.4s ease;
+}
+.hero-image.is-loaded {
+  opacity: 1;
+}
+.pokeball-loader {
+  position: absolute;
+  inset: 0;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.pokeball {
+  position: relative;
+  width: 56px;
+  height: 56px;
+  border-radius: 50%;
+  background: #f7f3ea;
+  border: 3px solid #141414;
+  overflow: hidden;
+  animation: pokeball-bounce 1s ease-in-out infinite;
+}
+.pokeball-top {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 50%;
+  background: #d64550;
+}
+.pokeball-bottom {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  height: 50%;
+  background: #f7f3ea;
+}
+.pokeball-band {
+  position: absolute;
+  top: 50%;
+  left: 0;
+  width: 100%;
+  height: 6px;
+  background: #141414;
+  transform: translateY(-50%);
+}
+.pokeball-button {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  width: 16px;
+  height: 16px;
+  background: #f7f3ea;
+  border: 3px solid #141414;
+  border-radius: 50%;
+  transform: translate(-50%, -50%);
+}
+@keyframes pokeball-bounce {
+  0%, 100% {
+    transform: translateY(0) rotate(0deg);
+  }
+  50% {
+    transform: translateY(-10px) rotate(180deg);
+  }
 }
 .field-rental {
   padding-block: 2rem 0;
