@@ -144,9 +144,14 @@ const links = [
     flex-direction: column;
     align-items: flex-start;
     width: 100%;
-    gap: 0.6rem;
-    padding-top: 0.8rem;
+    gap: 1rem;
+    padding-top: 1rem;
+    padding-bottom: 1rem;
   }
-  .nav.open { display: flex; }
+  .nav.open { display: flex;         
+    border-top: 1px solid var(--amatese-yellow);
+        border-bottom: 1px solid var(--amatese-yellow);
+        align-items: center;
+        margin-top: 1.5rem; }
 }
 </style>
