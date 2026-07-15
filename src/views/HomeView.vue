@@ -4,7 +4,7 @@ import episodesRaw from '../data/episodes.json'
 import podcastsRaw from '../data/podcasts.json'
 import club from '../data/club.json'
 import { withUnlockState, formatDate } from '../composables/useUnlock'
-import spogliatoioImg from '../assets/images/amatese-copertina.png'
+import spogliatoioImg from '../assets/images/amatese_copertina.png'
 import amateseImg from '../assets/images/amatese.png'
 
 const episodes = withUnlockState(episodesRaw, 'date')
@@ -24,12 +24,12 @@ const latestUnlocked = computed(() => {
   <section class="hero">
     <div class="container hero-grid">
       <div class="screen pixel-border">
-        <img class="logo" :src="amateseImg"/>
+        <!--img class="logo" :src="amateseImg"/-->
         <p class="eyebrow" style="color: var(--pixel-green)">a.s.d. nuova amatese calcio</p>
         <h1 class="title">VIENI A GIOCARE<br />CON NOI!</h1>
         <p class="tagline">{{ club.mission }}</p>
         <div class="cta-row">
-          <a class="btn" :href="`tel:${club.contacts.phones[0].replace(/\s/g, '')}`">📞 chiamaci ora</a>
+          <!--a class="btn" :href="`tel:${club.contacts.phones[0].replace(/\s/g, '')}`">📞 chiamaci ora</a-->
           <router-link class="btn btn-alt" to="/dove-siamo">dove siamo</router-link>
         </div>
       </div>

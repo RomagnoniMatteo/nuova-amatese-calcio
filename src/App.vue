@@ -129,7 +129,6 @@ const links = [
   font-family: var(--font-mono);
   font-size: 0.8rem;
   padding: 1.2rem 0;
-  margin-top: 3rem;
 }
 .footer-inner {
   display: flex;
