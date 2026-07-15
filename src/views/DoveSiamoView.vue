@@ -16,14 +16,25 @@ function onMapError() {
   mapFailed.value = true
 }
 
+function isInAppBrowser() {
+  const ua = navigator.userAgent || ''
+  // Instagram e Facebook usano lo stesso motore in-app (Meta)
+  return /Instagram|FBAN|FBAV/i.test(ua)
+}
+
 onMounted(() => {
-  // se il load non scatta entro 4s, consideriamo l'embed bloccato
+  if (isInAppBrowser()) {
+    // niente iframe: Google Maps embed è quasi sempre bloccato
+    // nei webview IG/FB per via dei cookie di terze parti
+    mapFailed.value = true
+    return
+  }
+
   setTimeout(() => {
     if (!mapLoaded.value) mapFailed.value = true
   }, 4000)
 })
 </script>
-
 <template>
   <section class="container page">
     <h1>Dove siamo</h1>
