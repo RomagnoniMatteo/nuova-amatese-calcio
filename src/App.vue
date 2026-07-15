@@ -15,7 +15,7 @@ const links = [
     <div class="container topbar-inner">
       <router-link to="/" class="brand" @click="navOpen = false">
         <img class="logo" :src="amateseImg"/>
-       Nuova Amatese Calcio
+       Amatese
       </router-link>
       <button class="nav-toggle" @click="navOpen = !navOpen" :aria-expanded="navOpen" aria-label="Apri il menu">
         ☰
