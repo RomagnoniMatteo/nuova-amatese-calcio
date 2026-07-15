@@ -1,8 +1,27 @@
 <script setup>
+import { ref, onMounted } from 'vue'
 import club from '../data/club.json'
 
 const mapQuery = encodeURIComponent('Nuova amatese calcio')
 const mapSrc = `https://www.google.com/maps?q=${mapQuery}&output=embed`
+const mapLink = `https://www.google.com/maps?q=${mapQuery}`
+
+const mapFailed = ref(false)
+const mapLoaded = ref(false)
+
+function onMapLoad() {
+  mapLoaded.value = true
+}
+function onMapError() {
+  mapFailed.value = true
+}
+
+onMounted(() => {
+  // se il load non scatta entro 4s, consideriamo l'embed bloccato
+  setTimeout(() => {
+    if (!mapLoaded.value) mapFailed.value = true
+  }, 4000)
+})
 </script>
 
 <template>
@@ -13,11 +32,23 @@ const mapSrc = `https://www.google.com/maps?q=${mapQuery}&output=embed`
       <div class="col">
         <div class="pixel-border map-wrap">
           <iframe
+            v-if="!mapFailed"
             :src="mapSrc"
             title="Mappa del campo dell'Amatese a Cassina Amata"
             loading="lazy"
             referrerpolicy="no-referrer-when-downgrade"
+            @load="onMapLoad"
+            @error="onMapError"
           ></iframe>
+          
+           <a v-else
+            :href="mapLink"
+            target="_blank"
+            rel="noopener"
+            class="map-fallback"
+          >
+            📍 Apri la mappa su Google Maps
+          </a>
         </div>
 
         <div class="addresses">
@@ -82,6 +113,18 @@ const mapSrc = `https://www.google.com/maps?q=${mapQuery}&output=embed`
   height: 320px;
   border: 0;
   display: block;
+}
+.map-fallback {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 320px;
+  text-decoration: none;
+  color: var(--pitch);
+  font-weight: 600;
+  font-family: var(--font-mono);
+  text-align: center;
+  padding: 0 1rem;
 }
 .addresses {
   background: var(--paper);
