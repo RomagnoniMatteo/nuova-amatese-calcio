@@ -96,18 +96,6 @@ onMounted(() => {
 </template>
 
 <style scoped>
-.page-wrap {
-  position: relative;
-}
-
-.page {
-  padding-block: 2rem 3rem;
-}
-
-/* ---------- TITOLO ---------- */
-.page-title {
-  animation: fadeSlideUp 0.6s ease both;
-}
 
 /* ---------- LAYOUT ---------- */
 .grid {
@@ -262,18 +250,6 @@ onMounted(() => {
   font-family: var(--font-mono);
   font-size: 0.7rem;
   color: var(--locked);
-}
-
-/* ---------- KEYFRAME COMUNE ---------- */
-@keyframes fadeSlideUp {
-  from {
-    opacity: 0;
-    transform: translateY(14px);
-  }
-  to {
-    opacity: 1;
-    transform: translateY(0);
-  }
 }
 
 @media (max-width: 760px) {

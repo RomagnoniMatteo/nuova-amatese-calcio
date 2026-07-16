@@ -81,18 +81,6 @@ const podcasts = withUnlockState(podcastsRaw, 'date').slice().reverse()
 </template>
 
 <style scoped>
-.page-wrap {
-  position: relative;
-}
-
-.page {
-  padding-block: 2rem 3rem;
-}
-
-/* ---------- TITOLO / TAB ---------- */
-.page-title {
-  animation: fadeSlideUp 0.6s ease both;
-}
 
 .tabs {
   display: flex;
@@ -249,15 +237,4 @@ const podcasts = withUnlockState(podcastsRaw, 'date').slice().reverse()
   font-size: 0.95rem;
 }
 
-/* ---------- KEYFRAME COMUNE ---------- */
-@keyframes fadeSlideUp {
-  from {
-    opacity: 0;
-    transform: translateY(14px);
-  }
-  to {
-    opacity: 1;
-    transform: translateY(0);
-  }
-}
 </style>
