@@ -272,6 +272,7 @@ const links = [
   font-size: 0.8rem;
   padding: 1.2rem 0;
   overflow: hidden;
+  margin-top: 1rem;
 }
 
 
