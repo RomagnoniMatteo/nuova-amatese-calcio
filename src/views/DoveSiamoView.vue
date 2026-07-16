@@ -1,6 +1,7 @@
 <script setup>
 import { ref, onMounted } from 'vue'
 import club from '../data/club.json'
+import '../styles/page.css'
 
 const mapQuery = encodeURIComponent('Nuova amatese calcio')
 const mapSrc = `https://www.google.com/maps?q=${mapQuery}&output=embed`

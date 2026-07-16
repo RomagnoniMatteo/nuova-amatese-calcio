@@ -7,6 +7,7 @@ const routes = [
   { path: '/serie/storia/:id', name: 'episodio', component: () => import('../views/EpisodioView.vue'), props: true },
   { path: '/serie/podcast/:id', name: 'podcast-episodio', component: () => import('../views/PodcastEpisodioView.vue'), props: true },
   { path: '/dove-siamo', name: 'dove-siamo', component: () => import('../views/DoveSiamoView.vue') },
+  { path: '/giovanili', name: 'giovanili', component: () => import('../views/GiovaniliView.vue') },
 ]
 
 const router = createRouter({

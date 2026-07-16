@@ -1,0 +1,66 @@
+[
+  {
+    "id": "pulcini",
+    "name": "Pulcini",
+    "yearRange": "2016/2017",
+    "coach": "Mister Andrea Ferretti",
+    "trainingDay": "Mar · Gio 17:30",
+    "players": [
+      { "id": "p1", "name": "Leo Bianchi", "role": "Portiere", "number": 1, "stats": { "tecnica": 5, "velocita": 6, "grinta": 7 } },
+      { "id": "p2", "name": "Tommaso Rossi", "role": "Difensore", "number": 4, "stats": { "tecnica": 6, "velocita": 5, "grinta": 8 } },
+      { "id": "p3", "name": "Diego Colombo", "role": "Difensore", "number": 5, "stats": { "tecnica": 5, "velocita": 7, "grinta": 6 } },
+      { "id": "p4", "name": "Samuele Ferrari", "role": "Centrocampista", "number": 8, "stats": { "tecnica": 7, "velocita": 6, "grinta": 5 } },
+      { "id": "p5", "name": "Gabriele Villa", "role": "Centrocampista", "number": 10, "stats": { "tecnica": 8, "velocita": 6, "grinta": 5 } },
+      { "id": "p6", "name": "Riccardo Marino", "role": "Attaccante", "number": 9, "stats": { "tecnica": 6, "velocita": 8, "grinta": 6 } }
+    ]
+  },
+  {
+    "id": "esordienti",
+    "name": "Esordienti",
+    "yearRange": "2014/2015",
+    "coach": "Mister Luca Greco",
+    "trainingDay": "Lun · Mer · Ven 18:00",
+    "players": [
+      { "id": "e1", "name": "Matteo Conti", "role": "Portiere", "number": 1, "stats": { "tecnica": 6, "velocita": 6, "grinta": 7 } },
+      { "id": "e2", "name": "Filippo Ricci", "role": "Difensore", "number": 3, "stats": { "tecnica": 6, "velocita": 6, "grinta": 8 } },
+      { "id": "e3", "name": "Nicolò Galli", "role": "Difensore", "number": 6, "stats": { "tecnica": 5, "velocita": 6, "grinta": 8 } },
+      { "id": "e4", "name": "Alessio Testa", "role": "Centrocampista", "number": 7, "stats": { "tecnica": 7, "velocita": 7, "grinta": 6 } },
+      { "id": "e5", "name": "Davide Serra", "role": "Centrocampista", "number": 8, "stats": { "tecnica": 8, "velocita": 6, "grinta": 6 } },
+      { "id": "e6", "name": "Cristian Moretti", "role": "Attaccante", "number": 11, "stats": { "tecnica": 7, "velocita": 8, "grinta": 7 } },
+      { "id": "e7", "name": "Simone Bruno", "role": "Attaccante", "number": 9, "stats": { "tecnica": 6, "velocita": 9, "grinta": 6 } }
+    ]
+  },
+  {
+    "id": "giovanissimi",
+    "name": "Giovanissimi",
+    "yearRange": "2012/2013",
+    "coach": "Mister Paolo Sartori",
+    "trainingDay": "Lun · Mer · Ven 18:30",
+    "players": [
+      { "id": "g1", "name": "Federico Longo", "role": "Portiere", "number": 12, "stats": { "tecnica": 6, "velocita": 5, "grinta": 8 } },
+      { "id": "g2", "name": "Andrea Fontana", "role": "Difensore", "number": 2, "stats": { "tecnica": 6, "velocita": 6, "grinta": 8 } },
+      { "id": "g3", "name": "Marco Costa", "role": "Difensore", "number": 4, "stats": { "tecnica": 5, "velocita": 7, "grinta": 9 } },
+      { "id": "g4", "name": "Pietro Rinaldi", "role": "Difensore", "number": 5, "stats": { "tecnica": 6, "velocita": 6, "grinta": 8 } },
+      { "id": "g5", "name": "Lorenzo Barbieri", "role": "Centrocampista", "number": 6, "stats": { "tecnica": 8, "velocita": 7, "grinta": 6 } },
+      { "id": "g6", "name": "Giacomo Farina", "role": "Centrocampista", "number": 10, "stats": { "tecnica": 9, "velocita": 6, "grinta": 6 } },
+      { "id": "g7", "name": "Nicola Pellegrini", "role": "Attaccante", "number": 9, "stats": { "tecnica": 7, "velocita": 8, "grinta": 7 } },
+      { "id": "g8", "name": "Emanuele Gatti", "role": "Attaccante", "number": 7, "stats": { "tecnica": 6, "velocita": 9, "grinta": 6 } }
+    ]
+  },
+  {
+    "id": "allievi",
+    "name": "Allievi",
+    "yearRange": "2010/2011",
+    "coach": "Mister Stefano Vitale",
+    "trainingDay": "Lun · Mer · Ven 19:00",
+    "players": [
+      { "id": "a1", "name": "Christian De Luca", "role": "Portiere", "number": 1, "stats": { "tecnica": 7, "velocita": 6, "grinta": 8 } },
+      { "id": "a2", "name": "Manuel Caruso", "role": "Difensore", "number": 3, "stats": { "tecnica": 6, "velocita": 7, "grinta": 9 } },
+      { "id": "a3", "name": "Kevin Basile", "role": "Difensore", "number": 5, "stats": { "tecnica": 6, "velocita": 6, "grinta": 9 } },
+      { "id": "a4", "name": "Jacopo Leone", "role": "Centrocampista", "number": 8, "stats": { "tecnica": 8, "velocita": 7, "grinta": 7 } },
+      { "id": "a5", "name": "Daniele Martini", "role": "Centrocampista", "number": 10, "stats": { "tecnica": 9, "velocita": 7, "grinta": 6 } },
+      { "id": "a6", "name": "Enrico Guerra", "role": "Attaccante", "number": 9, "stats": { "tecnica": 7, "velocita": 9, "grinta": 7 } },
+      { "id": "a7", "name": "Luca Silvestri", "role": "Attaccante", "number": 11, "stats": { "tecnica": 6, "velocita": 8, "grinta": 8 } }
+    ]
+  }
+]

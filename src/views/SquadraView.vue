@@ -1,4 +1,5 @@
 <script setup>
+import '../styles/page.css'
 import { computed, ref } from 'vue'
 import players from '../data/pokedex.json'
 import staff from '../data/staff.json'

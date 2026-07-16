@@ -7,6 +7,7 @@ import AnimatedBackground from './components/AnimatedBackground.vue'
 const navOpen = ref(false)
 const links = [
   { to: '/squadra', label: 'Prima Squadra' },
+   { to: '/giovanili', label: 'Giovanili' },
   { to: '/serie', label: 'La Serie' },
 ]
 </script>
@@ -72,18 +73,6 @@ const links = [
 </template>
 
 <style scoped>
-.page-wrap {
-  position: relative;
-}
-
-.page {
-  padding-block: 2rem 3rem;
-}
-
-/* ---------- TITOLO / TAB ---------- */
-.page-title {
-  animation: fadeSlideUp 0.6s ease both;
-}
 
 .topbar {
   position: sticky;
@@ -373,18 +362,6 @@ const links = [
   from {
     opacity: 0;
     transform: translateY(-8px);
-  }
-  to {
-    opacity: 1;
-    transform: translateY(0);
-  }
-}
-
-/* ---------- KEYFRAME COMUNE ---------- */
-@keyframes fadeSlideUp {
-  from {
-    opacity: 0;
-    transform: translateY(14px);
   }
   to {
     opacity: 1;
