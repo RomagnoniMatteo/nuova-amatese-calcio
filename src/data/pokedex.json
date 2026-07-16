@@ -2,100 +2,108 @@
   {
     "number": 1,
     "playerId": "lanzoni",
-    "name": "A. Lanzoni",
+    "name": "Andrea Lanzoni",
+    "group": "P",
     "role": "Portiere",
-    "description": "Figlio di mr. Marco. Alterna parate fenomenali a momenti di pura paura e follia. Appassionato di schedine, sogna di aprire un casinò tutto suo.",
-    "unlockDate": "2026-08-22",
-    "image": "lanzoni"
+    "unlockDate": "2026-07-15",
+    "instagramUrl": "https://scontent-mxp2-1.cdninstagram.com/v/t51.82787-15/733194797_17886809301660106_500211681041159466_n.webp?_nc_cat=100&ig_cache_key=MzkzNTg0NTQ1NzU3Njc1NDQ3Mw%3D%3D.3-ccb7-5&ccb=7-5&_nc_sid=58cdad&efg=eyJ2ZW5jb2RlX3RhZyI6IkNBUk9VU0VMX0lURU0ueHBpZHMuMTA4MC5zZHIucmVndWxhcl9waG90by5DMyJ9&_nc_ohc=Yo9_iVx-uOoQ7kNvwHrHU28&_nc_oc=AdrfWzsupERTxImciTN9PqV9blCytzIuZ803eBdY9eBhDPlH2h5qCv2KvwcNXlOvB85w8amfpd4kBDadGVCxAL2m&_nc_ad=z-m&_nc_cid=0&_nc_zt=23&_nc_ht=scontent-mxp2-1.cdninstagram.com&_nc_gid=L3m6yq0j_xnShKR-TKTJyQ&_nc_ss=7a22e&oh=00_AQCYY2XJY_-tt3yT9PFBOwQrR8L3U-Skx-IWblkPu090QA&oe=6A5D4BBB"
   },
-  {
+   {
     "number": 2,
     "playerId": "cendamo",
-    "name": "A. Cendamo",
+    "name": "Andrea Cendamo",
+    "group": "P",
     "role": "Portiere",
-    "description": "Figlio di mr. Nino e conduttore del podcast 'Ma il Cenda è sempre Fallu'. Passa le giornate a fare TikTok e ad allenarsi per tornare in forma.",
-    "unlockDate": "2026-08-29",
-    "image": "cendamo"
-  },
-  {
+    "unlockDate": "2026-07-07",
+    "instagramUrl": null
+    },
+     {
     "number": 3,
     "playerId": "galli",
-    "name": "F. Galli",
+    "name": "Federico Galli",
+    "group": "D",
     "role": "Difensore",
-    "description": "Figlio del pres (sì, pure lui è raccomandato) e terzino destro di spinta. Ingegnere matematico, alza il QI della squadra di almeno venti punti percentuali.",
-    "unlockDate": "2026-09-05",
-    "image": "galli"
-  },
-  {
+    "unlockDate": "2026-07-07",
+    "instagramUrl": null
+    }, {
     "number": 4,
-    "playerId": "brichetti",
-    "name": "L. Brichetti",
+    "playerId": "briche",
+    "name": "Luca Brichetti",
+    "group": "D",
     "role": "Difensore",
-    "description": "Terzino e difensore centrale all'occorrenza. Può giocare letteralmente ovunque, basta che non debba tirare in porta — l'ultimo suo gol risale infatti a un torneo delle elementari.",
-    "unlockDate": "2026-09-10",
-    "image": "brichetti"
-  },
-  {
+    "unlockDate": "2026-07-07",
+    "instagramUrl": null
+    }, {
     "number": 5,
     "playerId": "campi",
-    "name": "A. Campi",
+    "name": "Alessandro Campi",
+    "group": "D",
     "role": "Difensore",
-    "description": "Pendolino inarrestabile. Da piccolo faceva l'esterno alto e segnava almeno trenta gol a stagione — di quei ragazzo ormai ne rimane solo il ricordo.",
-    "unlockDate": "2026-10-01",
-    "image": "campi"
-  },
-  {
+    "unlockDate": "2026-07-07",
+    "instagramUrl": null
+    }, {
     "number": 6,
-    "playerId": "iannace",
-    "name": "F. Iannace",
+    "playerId": "ianna",
+    "name": "Francesco Iannace",
+    "group": "D",
     "role": "Difensore",
-    "description": "Il giocatore per cui andresti in guerra. Quando gioca sembra un misto tra Zanetti sotto steroidi e Lichsteiner prime. Insegna educazione fisica per un motivo.",
-    "unlockDate": "2026-10-08",
-    "image": "iannace"
-  },
-  {
+    "unlockDate": "2026-07-07",
+    "instagramUrl": null
+    }, {
     "number": 7,
-    "playerId": "nava-mark",
-    "name": "M. Nava",
+    "playerId": "baldo",
+    "name": "Fecerico Baldo",
+    "group": "D",
     "role": "Difensore",
-    "description": "In arrivo — pokedex ancora da disegnare.",
-    "unlockDate": "2026-10-24",
-    "locked": true
-  },
-  {
-    "number": 8,
-    "playerId": "semanaj",
-    "name": "D. Semanaj",
-    "role": "Difensore",
-    "description": "In arrivo — pokedex ancora da disegnare.",
-    "unlockDate": "2026-10-15",
-    "locked": true
-  },
-  {
+    "unlockDate": "2026-07-07",
+    "instagramUrl": null
+    }, {
     "number": 9,
-    "playerId": "cazzaniga",
-    "name": "M. Cazzaniga",
+    "playerId": "mark",
+    "name": "Mark Nava",
+    "group": "D",
     "role": "Difensore",
-    "description": "In arrivo — pokedex ancora da disegnare.",
-    "unlockDate": "2026-10-01",
-    "locked": true
-  },
-  {
+    "unlockDate": "2026-07-07",
+    "instagramUrl": null
+    }, {
     "number": 10,
-    "playerId": "laporta",
-    "name": "T. Laporta",
+    "playerId": "cazza",
+    "name": "Mattia Cazzaniga",
+    "group": "D",
     "role": "Difensore",
-    "description": "In arrivo — pokedex ancora da disegnare.",
-    "unlockDate": "2026-10-08",
-    "locked": true
-  },
-  {
+    "unlockDate": "2026-07-07",
+    "instagramUrl": null
+    }, {
     "number": 11,
-    "playerId": "longoni",
-    "name": "Longoni",
+    "playerId": "tommy",
+    "name": "Tommaso Laporta",
+    "group": "D",
     "role": "Difensore",
-    "description": "In arrivo — pokedex ancora da disegnare. (fine difensori)",
-    "unlockDate": "2026-10-29",
-    "locked": true
-  }
+    "unlockDate": "2026-07-07",
+    "instagramUrl": null
+    }, {
+    "number": 12,
+    "playerId": "denis",
+    "name": "Denis Semanaj",
+    "group": "D",
+    "role": "Difensore",
+    "unlockDate": "2026-07-07",
+    "instagramUrl": null
+    }, {
+    "number": 13,
+    "playerId": "mosco",
+    "name": "Mosconi",
+    "group": "D",
+    "role": "Difensore",
+    "unlockDate": "2026-07-07",
+    "instagramUrl": null
+    }, {
+    "number": 14,
+    "playerId": "longo",
+    "name": "Longoni",
+    "group": "D",
+    "role": "Difensore",
+    "unlockDate": "2026-07-07",
+    "instagramUrl": null
+    }
 ]

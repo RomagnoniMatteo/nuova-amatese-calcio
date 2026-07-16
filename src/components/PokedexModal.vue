@@ -1,28 +1,63 @@
 <script setup>
-defineProps({
+import { ref, watch } from 'vue'
+
+const props = defineProps({
   card: { type: Object, default: null },
 })
+
 const emit = defineEmits(['close'])
+
+const imageLoaded = ref(false)
+
+// ogni volta che cambia la card (o si apre/chiude), resettiamo il loader
+watch(
+  () => props.card,
+  (newCard) => {
+    imageLoaded.value = !newCard?.instagramUrl
+  },
+  { immediate: true }
+)
 </script>
 
 <template>
   <Teleport to="body">
-    <div v-if="card" class="overlay" @click.self="emit('close')">
-      <div class="modal pixel-border" role="dialog" aria-modal="true">
-        <button class="close" @click="emit('close')" aria-label="Chiudi">✕</button>
-        <div class="card-head">
-          <span class="number">#{{ String(card.number).padStart(3, '0') }}</span>
-        </div>
-        <div class="portrait">🟢</div>
-        <h2 class="name">{{ card.name }}</h2>
-        <p class="role">{{ card.role }}</p>
-        <div class="desc">
-          <p class="desc-label">Descrizione:</p>
-          <p>{{ card.description }}</p>
-        </div>
-        <p class="unlock-note">Scheda sbloccata il {{ card.unlockDateLabel }}</p>
+    <transition name="modal-fade">
+      <div v-if="card" class="overlay" @click.self="emit('close')">
+        <transition name="modal-pop" appear>
+          <div class="modal pixel-border" role="dialog" aria-modal="true" :key="card.playerId">
+            <button class="close" @click="emit('close')" aria-label="Chiudi">✕</button>
+
+            <div v-if="card.instagramUrl" class="image-wrap">
+              <div v-if="!imageLoaded" class="pokeball-loader" aria-label="Caricamento immagine">
+                <div class="pokeball">
+                  <div class="pokeball-top"></div>
+                  <div class="pokeball-band"></div>
+                  <div class="pokeball-bottom"></div>
+                  <div class="pokeball-button"></div>
+                </div>
+              </div>
+              <img
+                style="max-width: 100%;"
+                :src="card.instagramUrl"
+                :class="{ 'is-loaded': imageLoaded }"
+                alt="Pokedex giocatore Amatese"
+                @load="imageLoaded = true"
+              />
+            </div>
+
+            <div v-else style="margin-bottom: 2rem;">
+              <h3>{{ card.name }}</h3>
+              <p class="player-name">
+                Pokedex non ancora presente :/<br />
+                Guarda le statistiche intanto!
+              </p>
+            </div>
+
+            <a class="btn cta-big" href="#">▶ Statistiche</a>
+          </div>
+        </transition>
       </div>
-    </div>
+    </transition>
   </Teleport>
 </template>
 
@@ -37,6 +72,7 @@ const emit = defineEmits(['close'])
   padding: 1.5rem;
   z-index: 50;
 }
+
 .modal {
   background: var(--paper);
   padding: 1.6rem;
@@ -45,6 +81,7 @@ const emit = defineEmits(['close'])
   text-align: center;
   position: relative;
 }
+
 .close {
   position: absolute;
   top: 0.6rem;
@@ -54,58 +91,129 @@ const emit = defineEmits(['close'])
   font-size: 1.1rem;
   cursor: pointer;
   color: var(--pitch);
+  transition: transform 0.2s ease, opacity 0.2s ease;
 }
-.card-head {
-  display: flex;
-  justify-content: flex-end;
+
+.close:hover {
+  transform: rotate(90deg);
+  opacity: 0.7;
 }
-.number {
-  font-family: var(--font-mono);
-  font-size: 0.75rem;
-  color: var(--pitch);
+
+.image-wrap {
+  position: relative;
+  min-height: 140px;
 }
-.portrait {
-  width: 96px;
-  height: 96px;
-  margin: 0.2rem auto 0.6rem;
-  border-radius: 50%;
-  background: var(--pixel-green);
-  border: 2px solid var(--pitch);
+
+.image-wrap img {
+  opacity: 0;
+  transform: scale(0.97);
+  transition: opacity 0.35s ease, transform 0.35s ease;
+}
+
+.image-wrap img.is-loaded {
+  opacity: 1;
+  transform: scale(1);
+}
+
+/* ---------- TRANSIZIONI OVERLAY / MODAL ---------- */
+.modal-fade-enter-active,
+.modal-fade-leave-active {
+  transition: opacity 0.25s ease;
+}
+.modal-fade-enter-from,
+.modal-fade-leave-to {
+  opacity: 0;
+}
+
+.modal-pop-enter-active {
+  transition: opacity 0.25s ease, transform 0.25s cubic-bezier(0.34, 1.56, 0.64, 1);
+}
+.modal-pop-leave-active {
+  transition: opacity 0.2s ease, transform 0.2s ease;
+}
+.modal-pop-enter-from {
+  opacity: 0;
+  transform: scale(0.9) translateY(8px);
+}
+.modal-pop-leave-to {
+  opacity: 0;
+  transform: scale(0.96);
+}
+
+/* ---------- LOADER ---------- */
+.pokeball-loader {
+  position: absolute;
+  inset: 0;
   display: flex;
   align-items: center;
   justify-content: center;
-  font-size: 2rem;
 }
-.name {
-  font-size: 1rem;
-  margin: 0.2rem 0 0.1rem;
+
+.pokeball {
+  position: relative;
+  width: 56px;
+  height: 56px;
+  border-radius: 50%;
+  background: #f7f3ea;
+  border: 3px solid #141414;
+  overflow: hidden;
+  animation: pokeball-bounce 1s ease-in-out infinite;
 }
-.role {
-  font-family: var(--font-mono);
-  font-size: 0.78rem;
-  color: var(--pitch);
-  margin: 0 0 0.8rem;
+
+.pokeball-top {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 50%;
+  background: #d64550;
 }
-.desc {
-  background: rgba(27, 67, 50, 0.06);
-  border-radius: 8px;
-  padding: 0.8rem;
-  text-align: left;
+
+.pokeball-bottom {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  height: 50%;
+  background: #f7f3ea;
 }
-.desc-label {
-  font-family: var(--font-mono);
-  font-size: 0.7rem;
-  color: var(--pitch);
-  margin: 0 0 0.3rem;
+
+.pokeball-band {
+  position: absolute;
+  top: 50%;
+  left: 0;
+  width: 100%;
+  height: 6px;
+  background: #141414;
+  transform: translateY(-50%);
 }
-.desc p {
-  font-size: 0.85rem;
-  margin: 0;
+
+.pokeball-button {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  width: 16px;
+  height: 16px;
+  background: #f7f3ea;
+  border: 3px solid #141414;
+  border-radius: 50%;
+  transform: translate(-50%, -50%);
 }
-.unlock-note {
-  font-family: var(--font-mono);
-  font-size: 0.7rem;
-  color: var(--locked);
-  margin-top: 0.8rem;
+
+@keyframes pokeball-bounce {
+  0%, 100% { transform: translateY(0) rotate(0deg); }
+  50%      { transform: translateY(-10px) rotate(180deg); }
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .modal-pop-enter-active,
+  .modal-pop-leave-active,
+  .modal-fade-enter-active,
+  .modal-fade-leave-active {
+    transition: none;
+  }
+  .pokeball {
+    animation: none;
+  }
 }
 </style>

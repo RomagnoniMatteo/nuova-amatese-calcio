@@ -22,15 +22,17 @@ const next = computed(() => episodesRaw[index.value + 1])
 <template>
   <section class="container page" v-if="episode">
     <button class="back" @click="router.push('/serie?tab=storia')">← torna alla serie</button>
-    <p class="eyebrow">episodio {{ String(episode.number).padStart(2, '0') }} · {{ formatDate(episode.date) }}</p>
-    <h1>{{ episode.title }}</h1>
+    <p class="eyebrow episode-tag">episodio {{ String(episode.number).padStart(2, '0') }} · {{ formatDate(episode.date) }}</p>
+    <h3 class="episode-title">{{ episode.title }}</h3>
 
-    <template v-if="unlocked">
-      <InstagramEmbed v-if="hasRealPost" :url="episode.instagramUrl" />
-      <a v-else class="btn ig-btn" :href="club.social.instagram" target="_blank" rel="noopener">
-        📸 Vai al profilo Instagram
-      </a>
-    </template>
+    <transition name="content-fade" mode="out-in">
+      <template v-if="unlocked" :key="episode.id">
+        <InstagramEmbed v-if="hasRealPost" :url="episode.instagramUrl" class="embed-anim" />
+        <a v-else class="btn ig-btn embed-anim" :href="club.social.instagram" target="_blank" rel="noopener">
+          📸 Vai al profilo Instagram
+        </a>
+      </template>
+    </transition>
 
     <nav class="pager">
       <router-link v-if="prev" :to="`/serie/storia/${prev.id}`">← ep. {{ String(prev.number).padStart(2, '0') }}</router-link>
@@ -48,6 +50,7 @@ const next = computed(() => episodesRaw[index.value + 1])
   padding-block: 2rem 3rem;
   max-width: 760px;
 }
+
 .back {
   background: none;
   border: none;
@@ -57,13 +60,51 @@ const next = computed(() => episodesRaw[index.value + 1])
   padding: 0;
   margin-bottom: 1rem;
   font-size: 0.85rem;
+  transition: transform 0.2s ease, opacity 0.2s ease;
 }
+
+.back:hover {
+  transform: translateX(-3px);
+  opacity: 0.75;
+}
+
+.episode-tag {
+  animation: fadeSlideUp 0.5s ease both;
+}
+
+.episode-title {
+  animation: fadeSlideUp 0.5s ease both;
+  animation-delay: 0.08s;
+}
+
+.content-fade-enter-active {
+  transition: opacity 0.35s ease, transform 0.35s ease;
+}
+.content-fade-enter-from {
+  opacity: 0;
+  transform: translateY(10px);
+}
+
+.embed-anim {
+  animation: fadeSlideUp 0.5s ease both;
+  animation-delay: 0.16s;
+}
+
 .ig-btn {
   margin-top: 0.8rem;
   background: linear-gradient(135deg, #f2c94c, #d64550, #833ab4);
+  background-size: 200% 200%;
   color: #fff;
   border-color: var(--pitch-dark);
+  transition: background-position 0.6s ease, transform 0.2s ease, box-shadow 0.2s ease;
 }
+
+.ig-btn:hover {
+  background-position: 100% 100%;
+  transform: translateY(-2px);
+  box-shadow: 0 10px 20px -10px rgba(0, 0, 0, 0.5);
+}
+
 .toggle-text {
   display: block;
   margin: 1rem 0 0;
@@ -76,20 +117,50 @@ const next = computed(() => episodesRaw[index.value + 1])
   text-decoration: underline dotted;
   padding: 0;
 }
+
 .script-wrap {
   background: var(--paper);
   padding: 1.5rem;
   margin-top: 1.2rem;
 }
+
 .pager {
   display: flex;
   justify-content: space-between;
   margin-top: 2rem;
   font-family: var(--font-mono);
   font-size: 0.85rem;
+  animation: fadeSlideUp 0.5s ease both;
+  animation-delay: 0.24s;
 }
+
 .pager a {
   text-decoration: none;
   color: var(--pitch);
+  transition: transform 0.2s ease, opacity 0.2s ease;
+  display: inline-block;
+}
+
+.pager a:hover {
+  opacity: 0.7;
+}
+
+.pager a:first-child:hover {
+  transform: translateX(-3px);
+}
+
+.pager a:last-child:hover {
+  transform: translateX(3px);
+}
+
+@keyframes fadeSlideUp {
+  from {
+    opacity: 0;
+    transform: translateY(14px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
 }
 </style>

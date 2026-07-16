@@ -33,7 +33,14 @@ defineProps({
   align-items: center;
   justify-content: center;
   color: var(--paper);
+  transition: transform 0.25s ease, filter 0.25s ease;
 }
+
+.locked:hover {
+  transform: translateY(-3px);
+  filter: brightness(1.05);
+}
+
 .scanlines {
   position: absolute;
   inset: 0;
@@ -46,29 +53,52 @@ defineProps({
   );
   animation: scan 6s linear infinite;
 }
+
 @keyframes scan {
   from { transform: translateY(0); }
   to { transform: translateY(20px); }
 }
+
 .locked-body {
   position: relative;
   text-align: center;
   padding: 1rem;
 }
+
 .lock-icon {
+  display: inline-block;
   font-family: var(--font-mono);
   font-size: 1.4rem;
   letter-spacing: 0.3em;
+  animation: flicker 3.2s ease-in-out infinite;
 }
+
+@keyframes flicker {
+  0%, 100% { opacity: 1; }
+  4%       { opacity: 0.4; }
+  6%       { opacity: 1; }
+  46%      { opacity: 1; }
+  48%      { opacity: 0.5; }
+  50%      { opacity: 1; }
+}
+
 .locked-label {
   font-family: var(--font-mono);
   font-weight: 500;
   margin: 0.4rem 0 0.1rem;
 }
+
 .locked-sub {
   font-family: var(--font-mono);
   font-size: 0.78rem;
   opacity: 0.85;
   margin: 0;
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .scanlines,
+  .lock-icon {
+    animation: none;
+  }
 }
 </style>
