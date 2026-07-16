@@ -40,7 +40,7 @@ const podcasts = withUnlockState(podcastsRaw, 'date').slice().reverse()
             <p class="entry-date">{{ formatDate(ep.date) }}</p>
             <p class="entry-title">{{ ep.title }}</p>
           </router-link>
-          <LockedCard v-else label="Episodio bloccato" :days-until="ep.daysUntil" :unlock-date="ep.date" />
+          <LockedCard v-else label="Puntata in arrivo" :days-until="ep.daysUntil" :unlock-date="ep.date" />
         </li>
       </ol>
     </div>

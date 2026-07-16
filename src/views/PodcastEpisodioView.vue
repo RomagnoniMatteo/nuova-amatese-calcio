@@ -4,8 +4,6 @@ import { useRouter } from 'vue-router'
 import episodesRaw from '../data/podcasts.json'
 import club from '../data/club.json'
 import { isUnlocked, formatDate } from '../composables/useUnlock'
-import DialogueScript from '../components/DialogueScript.vue'
-import LockedCard from '../components/LockedCard.vue'
 import InstagramEmbed from '../components/InstagramEmbed.vue'
 
 const props = defineProps({ id: { type: String, required: true } })
@@ -33,11 +31,6 @@ const next = computed(() => episodesRaw[index.value + 1])
         📸 Vai al profilo Instagram
       </a>
     </template>
-
-    <div v-if="unlocked && (showText || !hasRealPost)" class="script-wrap pixel-border">
-      <DialogueScript :script="episode.script" />
-    </div>
-    <LockedCard v-else-if="!unlocked" label="Questo episodio non è ancora uscito" />
 
     <nav class="pager">
       <router-link v-if="prev" :to="`/serie/storia/${prev.id}`">← ep. {{ String(prev.number).padStart(2, '0') }}</router-link>
