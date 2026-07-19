@@ -36,22 +36,15 @@ onMounted(() => {
 
 <template>
   <div class="page-wrap">
-  
+
     <section class="container page">
       <h1 class="page-title">Dove siamo</h1>
 
       <div class="grid">
         <div class="col col-left">
           <div class="pixel-border map-wrap">
-            <iframe
-              v-if="!mapFailed"
-              :src="mapSrc"
-              title="Mappa del campo dell'Amatese a Cassina Amata"
-              loading="lazy"
-              referrerpolicy="no-referrer-when-downgrade"
-              @load="onMapLoad"
-              @error="onMapError"
-            ></iframe>
+            <iframe v-if="!mapFailed" :src="mapSrc" title="Mappa del campo dell'Amatese a Cassina Amata" loading="lazy"
+              referrerpolicy="no-referrer-when-downgrade" @load="onMapLoad" @error="onMapError"></iframe>
 
             <a v-else :href="mapLink" target="_blank" rel="noopener" class="map-fallback">
               📍 Apri la mappa su Google Maps
@@ -97,7 +90,6 @@ onMounted(() => {
 </template>
 
 <style scoped>
-
 /* ---------- LAYOUT ---------- */
 .grid {
   display: grid;

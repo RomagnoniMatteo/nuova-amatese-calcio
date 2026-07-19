@@ -7,7 +7,7 @@ import AnimatedBackground from './components/AnimatedBackground.vue'
 const navOpen = ref(false)
 const links = [
   { to: '/squadra', label: 'Prima Squadra' },
-   { to: '/giovanili', label: 'Giovanili' },
+  { to: '/giovanili', label: 'Giovanili' },
   { to: '/serie', label: 'La Serie' },
 ]
 </script>
@@ -65,7 +65,7 @@ const links = [
     <div class="container footer-inner">
       <span class="footer-legal">{{ club.legal }}</span>
       <span class="footer-credit">
-       
+
         © 2026 Matteo Romagnoni
       </span>
     </div>
@@ -73,7 +73,6 @@ const links = [
 </template>
 
 <style scoped>
-
 .topbar {
   position: sticky;
   top: 0;
@@ -117,8 +116,13 @@ const links = [
 }
 
 @keyframes ball-spin-slow {
-  from { transform: translateY(-50%) rotate(0deg); }
-  to   { transform: translateY(-50%) rotate(360deg); }
+  from {
+    transform: translateY(-50%) rotate(0deg);
+  }
+
+  to {
+    transform: translateY(-50%) rotate(360deg);
+  }
 }
 
 .topbar-inner {
@@ -186,9 +190,11 @@ const links = [
 .burger.open span:nth-child(1) {
   transform: translateY(6px) rotate(45deg);
 }
+
 .burger.open span:nth-child(2) {
   opacity: 0;
 }
+
 .burger.open span:nth-child(3) {
   transform: translateY(-6px) rotate(-45deg);
 }
@@ -245,14 +251,17 @@ const links = [
 .page-fade-leave-active {
   transition: opacity 0.25s ease, transform 0.25s ease;
 }
+
 .page-fade-enter-from {
   opacity: 0;
   transform: translateY(10px);
 }
+
 .page-fade-leave-to {
   opacity: 0;
   transform: translateY(-6px);
 }
+
 .footer {
   position: relative;
   background: var(--pixel-dark);
@@ -286,8 +295,13 @@ const links = [
 }
 
 @keyframes line-sweep {
-  0%   { left: -30%; }
-  100% { left: 100%; }
+  0% {
+    left: -30%;
+  }
+
+  100% {
+    left: 100%;
+  }
 }
 
 /* ---------- CONTENUTO ---------- */
@@ -318,6 +332,7 @@ const links = [
 
 
 @media (prefers-reduced-motion: reduce) {
+
   .footer-bg,
   .footer-line {
     animation: none;
@@ -325,10 +340,12 @@ const links = [
 }
 
 @media (prefers-reduced-motion: reduce) {
+
   .topbar-ball,
   .footer-line {
     animation: none;
   }
+
   .page-fade-enter-active,
   .page-fade-leave-active {
     transition: none;
@@ -339,6 +356,7 @@ const links = [
   .nav-toggle {
     display: inline-block;
   }
+
   .nav {
     display: none;
     flex-direction: column;
@@ -348,6 +366,7 @@ const links = [
     padding-top: 1rem;
     padding-bottom: 1rem;
   }
+
   .nav.open {
     display: flex;
     border-top: 1px solid var(--amatese-yellow);
@@ -363,10 +382,10 @@ const links = [
     opacity: 0;
     transform: translateY(-8px);
   }
+
   to {
     opacity: 1;
     transform: translateY(0);
   }
 }
-
 </style>

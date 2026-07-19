@@ -6,6 +6,7 @@ import club from '../data/club.json'
 import { withUnlockState, formatDate } from '../composables/useUnlock'
 import spogliatoioImg from '../assets/images/amatese_copertina.png'
 import amateseImg from '../assets/images/amatese.png'
+import PokeballLoader from '../components/PokeballLoader.vue'
 
 const episodes = withUnlockState(episodesRaw, 'date')
 const podcasts = withUnlockState(podcastsRaw, 'date')
@@ -23,69 +24,56 @@ const latestUnlocked = computed(() => {
 </script>
 
 <template>
-   <div class="home-root">
-  <section class="hero">
-    <div class="hero-bg" aria-hidden="true">
-      <span class="hero-blob hero-blob-1"></span>
-      <span class="hero-blob hero-blob-2"></span>
-      <span class="hero-particles"></span>
-    </div>
-
-    <div class="container hero-grid">
-      <div class="screen pixel-border">
-        <p class="eyebrow" style="color: var(--pixel-green)">a.s.d. nuova amatese calcio</p>
-        <h1 class="title">VIENI A GIOCARE<br />CON NOI!</h1>
-        <p class="tagline">{{ club.mission }}</p>
-        <div class="cta-row">
-          <router-link class="btn btn-alt" to="/dove-siamo">▶ vieni a trovarci</router-link>
-        </div>
+  <div class="home-root">
+    <section class="hero">
+      <div class="hero-bg" aria-hidden="true">
+        <span class="hero-blob hero-blob-1"></span>
+        <span class="hero-blob hero-blob-2"></span>
+        <span class="hero-particles"></span>
       </div>
-      <div class="hero-image-wrap">
-        <div v-if="!heroImageLoaded" class="pokeball-loader" aria-label="Caricamento immagine">
-          <div class="pokeball">
-            <div class="pokeball-top"></div>
-            <div class="pokeball-band"></div>
-            <div class="pokeball-bottom"></div>
-            <div class="pokeball-button"></div>
+
+      <div class="container hero-grid">
+        <div class="screen pixel-border">
+          <p class="eyebrow" style="color: var(--pixel-green)">a.s.d. nuova amatese calcio</p>
+          <h1 class="title">VIENI A GIOCARE<br />CON NOI!</h1>
+          <p class="tagline">{{ club.mission }}</p>
+          <div class="cta-row">
+            <router-link class="btn btn-alt" to="/dove-siamo">▶ vieni a trovarci</router-link>
           </div>
         </div>
-        <img
-          class="hero-image"
-          :class="{ 'is-loaded': heroImageLoaded }"
-          :src="spogliatoioImg"
-          alt="Scena disegnata dello spogliatoio dell'Amatese con lo staff riunito"
-          @load="heroImageLoaded = true"
-        />
+        <div class="hero-image-wrap">
+          <div v-if="!heroImageLoaded">
+            <pokeball-loader />
+          </div>
+          <img class="hero-image" :class="{ 'is-loaded': heroImageLoaded }" :src="spogliatoioImg"
+            alt="Scena disegnata dello spogliatoio dell'Amatese con lo staff riunito" @load="heroImageLoaded = true" />
+        </div>
       </div>
-    </div>
-  </section>
+    </section>
 
-  <section class="container lore-teaser">
-    <div class="lore-head">
-      <h2 class="section-title">Non solo calcio: la storia dell'Amatese</h2>
-    </div>
-    <div class="lore-links">
-      <router-link class="btn btn-alt" to="/serie">▶ scopri la storia</router-link>
-    </div>
+    <section class="container lore-teaser">
+      <div class="lore-head">
+        <h2 class="section-title">Non solo calcio: la storia dell'Amatese</h2>
+      </div>
+      <div class="lore-links">
+        <router-link class="btn btn-alt" to="/serie">▶ scopri la storia</router-link>
+      </div>
 
-    <div v-if="latestUnlocked.length" class="update-col">
-      <h3 class="section-title small">Ultimi Post</h3>
-      <ul class="update-list">
-        <li
-          v-for="(item, i) in latestUnlocked"
-          :key="item.id"
-          class="update-item"
-          :style="{ '--delay': (i * 0.08) + 's' }"
-        >
-          <router-link :to="item.kind === 'storia' ? `/serie/storia/${item.id}` : `/serie/podcast/${item.id}`">
-            <span class="badge" style="color: var(--pitch)">{{ item.kind === 'storia' ? 'Episodio' : 'Podcast' }}</span>
-            <strong>{{ item.title }}</strong>
-            <span class="date">{{ formatDate(item.date) }}</span>
-          </router-link>
-        </li>
-      </ul>
-    </div>
-  </section>
+      <div v-if="latestUnlocked.length" class="update-col">
+        <h3 class="section-title small">Ultimi Post</h3>
+        <ul class="update-list">
+          <li v-for="(item, i) in latestUnlocked" :key="item.id" class="update-item"
+            :style="{ '--delay': (i * 0.08) + 's' }">
+            <router-link :to="item.kind === 'storia' ? `/serie/storia/${item.id}` : `/serie/podcast/${item.id}`">
+              <span class="badge" style="color: var(--pitch)">{{ item.kind === 'storia' ? 'Episodio' : 'Podcast'
+              }}</span>
+              <strong>{{ item.title }}</strong>
+              <span class="date">{{ formatDate(item.date) }}</span>
+            </router-link>
+          </li>
+        </ul>
+      </div>
+    </section>
   </div>
 </template>
 
@@ -141,21 +129,41 @@ const latestUnlocked = computed(() => {
 }
 
 @keyframes hero-float-1 {
-  0%, 100% { transform: translate(0, 0) scale(1); }
-  50%      { transform: translate(50px, 30px) scale(1.1); }
+
+  0%,
+  100% {
+    transform: translate(0, 0) scale(1);
+  }
+
+  50% {
+    transform: translate(50px, 30px) scale(1.1);
+  }
 }
 
 @keyframes hero-float-2 {
-  0%, 100% { transform: translate(0, 0) scale(1); }
-  50%      { transform: translate(-40px, -40px) scale(1.15); }
+
+  0%,
+  100% {
+    transform: translate(0, 0) scale(1);
+  }
+
+  50% {
+    transform: translate(-40px, -40px) scale(1.15);
+  }
 }
 
 @keyframes particles-drift {
-  0%   { background-position: 0 0; }
-  100% { background-position: 120px 60px; }
+  0% {
+    background-position: 0 0;
+  }
+
+  100% {
+    background-position: 120px 60px;
+  }
 }
 
 @media (prefers-reduced-motion: reduce) {
+
   .hero-blob,
   .hero-particles {
     animation: none;
@@ -214,6 +222,7 @@ const latestUnlocked = computed(() => {
   width: 25%;
   object-fit: cover;
 }
+
 .hero-image-wrap {
   position: relative;
   width: 100%;
@@ -247,69 +256,6 @@ const latestUnlocked = computed(() => {
   transform: scale(1.12);
 }
 
-.pokeball-loader {
-  position: absolute;
-  inset: 0;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-}
-
-.pokeball {
-  position: relative;
-  width: 56px;
-  height: 56px;
-  border-radius: 50%;
-  background: #f7f3ea;
-  border: 3px solid #141414;
-  overflow: hidden;
-  animation: pokeball-bounce 1s ease-in-out infinite;
-}
-
-.pokeball-top {
-  position: absolute;
-  top: 0;
-  left: 0;
-  width: 100%;
-  height: 50%;
-  background: #d64550;
-}
-
-.pokeball-bottom {
-  position: absolute;
-  bottom: 0;
-  left: 0;
-  width: 100%;
-  height: 50%;
-  background: #f7f3ea;
-}
-
-.pokeball-band {
-  position: absolute;
-  top: 50%;
-  left: 0;
-  width: 100%;
-  height: 6px;
-  background: #141414;
-  transform: translateY(-50%);
-}
-
-.pokeball-button {
-  position: absolute;
-  top: 50%;
-  left: 50%;
-  width: 16px;
-  height: 16px;
-  background: #f7f3ea;
-  border: 3px solid #141414;
-  border-radius: 50%;
-  transform: translate(-50%, -50%);
-}
-
-@keyframes pokeball-bounce {
-  0%, 100% { transform: translateY(0) rotate(0deg); }
-  50%      { transform: translateY(-10px) rotate(180deg); }
-}
 
 .field-rental {
   padding-block: 2rem 0;

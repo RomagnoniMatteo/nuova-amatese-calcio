@@ -1,25 +1,23 @@
-
 <template>
- <div class="coming-soon">
-        <div class="coming-ball-wrap">
-          <svg class="coming-ball" viewBox="0 0 100 100" xmlns="http://www.w3.org/2000/svg">
-            <circle cx="50" cy="50" r="46" fill="#f7f3ea" stroke="var(--pitch)" stroke-width="4" />
-            <path d="M 4 50 A 46 46 0 0 1 96 50 L 4 50 Z" fill="var(--pixel-green)" />
-            <polygon points="35,20 44,26 41,36 29,36 26,26" fill="var(--pitch)" opacity="0.85" />
-            <polygon points="63,18 73,23 71,33 60,32 58,24" fill="var(--pitch)" opacity="0.85" />
-            <rect x="4" y="46" width="92" height="8" fill="var(--pitch)" />
-            <circle cx="50" cy="50" r="12" fill="#f7f3ea" stroke="var(--pitch)" stroke-width="4" />
-            <circle cx="50" cy="50" r="5" fill="var(--amatese-yellow)" />
-          </svg>
-          <span class="coming-shadow"></span>
-        </div>
+  <div class="coming-soon">
+    <div class="coming-ball-wrap">
+      <svg class="coming-ball" viewBox="0 0 100 100" xmlns="http://www.w3.org/2000/svg">
+        <circle cx="50" cy="50" r="46" fill="#f7f3ea" stroke="var(--pitch)" stroke-width="4" />
+        <path d="M 4 50 A 46 46 0 0 1 96 50 L 4 50 Z" fill="var(--pixel-green)" />
+        <polygon points="35,20 44,26 41,36 29,36 26,26" fill="var(--pitch)" opacity="0.85" />
+        <polygon points="63,18 73,23 71,33 60,32 58,24" fill="var(--pitch)" opacity="0.85" />
+        <rect x="4" y="46" width="92" height="8" fill="var(--pitch)" />
+        <circle cx="50" cy="50" r="12" fill="#f7f3ea" stroke="var(--pitch)" stroke-width="4" />
+        <circle cx="50" cy="50" r="5" fill="var(--amatese-yellow)" />
+      </svg>
+      <span class="coming-shadow"></span>
+    </div>
 
-        <h2 class="coming-title">Prossimamente<span class="dots"><span>.</span><span>.</span><span>.</span></span></h2>
+    <h2 class="coming-title">Prossimamente<span class="dots"><span>.</span><span>.</span><span>.</span></span></h2>
 
-      </div>
+  </div>
 </template>
 <style scoped>
-
 .coming-soon {
   display: flex;
   flex-direction: column;
@@ -58,10 +56,13 @@
 }
 
 @keyframes shadow-pulse {
-  0%, 100% {
+
+  0%,
+  100% {
     opacity: 0.7;
     transform: translateX(-50%) scale(1);
   }
+
   50% {
     opacity: 0.3;
     transform: translateX(-50%) scale(0.7);
@@ -91,10 +92,14 @@
 }
 
 @keyframes dot-bounce {
-  0%, 60%, 100% {
+
+  0%,
+  60%,
+  100% {
     opacity: 0.3;
     transform: translateY(0);
   }
+
   30% {
     opacity: 1;
     transform: translateY(-3px);

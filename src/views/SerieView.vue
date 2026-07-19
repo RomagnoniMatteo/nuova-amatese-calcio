@@ -21,15 +21,17 @@ const podcasts = withUnlockState(podcastsRaw, 'date').slice().reverse()
 
 <template>
   <div class="page-wrap">
-  
+
     <section class="container page">
       <h1 class="page-title">La Serie</h1>
 
       <div class="tabs" role="tablist">
-        <button role="tab" :aria-selected="tab === 'storia'" :class="{ active: tab === 'storia' }" @click="setTab('storia')">
+        <button role="tab" :aria-selected="tab === 'storia'" :class="{ active: tab === 'storia' }"
+          @click="setTab('storia')">
           📖 Storia
         </button>
-        <button role="tab" :aria-selected="tab === 'podcast'" :class="{ active: tab === 'podcast' }" @click="setTab('podcast')">
+        <button role="tab" :aria-selected="tab === 'podcast'" :class="{ active: tab === 'podcast' }"
+          @click="setTab('podcast')">
           🎙️ Podcast
         </button>
       </div>
@@ -38,12 +40,8 @@ const podcasts = withUnlockState(podcastsRaw, 'date').slice().reverse()
         <div v-if="tab === 'storia'" key="storia" class="tab-panel">
           <p class="eyebrow">Prima stagione</p>
           <ol class="timeline">
-            <li
-              v-for="(ep, i) in episodes"
-              :key="ep.id"
-              class="entry entry-anim"
-              :style="{ '--delay': (i * 0.06) + 's' }"
-            >
+            <li v-for="(ep, i) in episodes" :key="ep.id" class="entry entry-anim"
+              :style="{ '--delay': (i * 0.06) + 's' }">
               <span class="ep-number">{{ String(ep.number).padStart(2, '0') }}</span>
               <router-link v-if="ep.unlocked" :to="`/serie/storia/${ep.id}`" class="entry-card pixel-border">
                 <p class="entry-date">{{ formatDate(ep.date) }}</p>
@@ -57,22 +55,13 @@ const podcasts = withUnlockState(podcastsRaw, 'date').slice().reverse()
         <div v-else key="podcast" class="tab-panel">
           <div class="grid">
             <template v-for="(p, i) in podcasts" :key="p.id">
-              <router-link
-                v-if="p.unlocked"
-                :to="`/serie/podcast/${p.id}`"
-                class="card pixel-border entry-anim"
-                :style="{ '--delay': (i * 0.06) + 's' }"
-              >
+              <router-link v-if="p.unlocked" :to="`/serie/podcast/${p.id}`" class="card pixel-border entry-anim"
+                :style="{ '--delay': (i * 0.06) + 's' }">
                 <p class="card-date">{{ formatDate(p.date) }}</p>
                 <p class="card-title">{{ p.title }}</p>
               </router-link>
-              <LockedCard
-                v-else
-                label="Puntata in arrivo"
-                :days-until="p.daysUntil"
-                class="entry-anim"
-                :style="{ '--delay': (i * 0.06) + 's' }"
-              />
+              <LockedCard v-else label="Puntata in arrivo" :days-until="p.daysUntil" class="entry-anim"
+                :style="{ '--delay': (i * 0.06) + 's' }" />
             </template>
           </div>
         </div>
@@ -82,7 +71,6 @@ const podcasts = withUnlockState(podcastsRaw, 'date').slice().reverse()
 </template>
 
 <style scoped>
-
 .tabs {
   display: flex;
   gap: 0.6rem;
@@ -122,10 +110,12 @@ const podcasts = withUnlockState(podcastsRaw, 'date').slice().reverse()
 .tab-fade-leave-active {
   transition: opacity 0.2s ease, transform 0.2s ease;
 }
+
 .tab-fade-enter-from {
   opacity: 0;
   transform: translateY(8px);
 }
+
 .tab-fade-leave-to {
   opacity: 0;
   transform: translateY(-6px);
@@ -237,5 +227,4 @@ const podcasts = withUnlockState(podcastsRaw, 'date').slice().reverse()
   font-weight: 700;
   font-size: 0.95rem;
 }
-
 </style>

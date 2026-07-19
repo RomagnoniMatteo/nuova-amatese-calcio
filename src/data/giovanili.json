@@ -3,8 +3,7 @@
     "id": "pulcini",
     "name": "Pulcini",
     "yearRange": "2016/2017",
-    "coach": "Mister Andrea Ferretti",
-    "trainingDay": "Mar · Gio 17:30",
+    "coach": " Andrea Ferretti",
     "players": [
       { "id": "p1", "name": "Leo Bianchi", "role": "Portiere", "number": 1, "stats": { "tecnica": 5, "velocita": 6, "grinta": 7 } },
       { "id": "p2", "name": "Tommaso Rossi", "role": "Difensore", "number": 4, "stats": { "tecnica": 6, "velocita": 5, "grinta": 8 } },
@@ -18,8 +17,7 @@
     "id": "esordienti",
     "name": "Esordienti",
     "yearRange": "2014/2015",
-    "coach": "Mister Luca Greco",
-    "trainingDay": "Lun · Mer · Ven 18:00",
+    "coach": " Luca Greco",
     "players": [
       { "id": "e1", "name": "Matteo Conti", "role": "Portiere", "number": 1, "stats": { "tecnica": 6, "velocita": 6, "grinta": 7 } },
       { "id": "e2", "name": "Filippo Ricci", "role": "Difensore", "number": 3, "stats": { "tecnica": 6, "velocita": 6, "grinta": 8 } },
@@ -34,8 +32,7 @@
     "id": "giovanissimi",
     "name": "Giovanissimi",
     "yearRange": "2012/2013",
-    "coach": "Mister Paolo Sartori",
-    "trainingDay": "Lun · Mer · Ven 18:30",
+    "coach": " Paolo Sartori",
     "players": [
       { "id": "g1", "name": "Federico Longo", "role": "Portiere", "number": 12, "stats": { "tecnica": 6, "velocita": 5, "grinta": 8 } },
       { "id": "g2", "name": "Andrea Fontana", "role": "Difensore", "number": 2, "stats": { "tecnica": 6, "velocita": 6, "grinta": 8 } },
@@ -51,8 +48,7 @@
     "id": "allievi",
     "name": "Allievi",
     "yearRange": "2010/2011",
-    "coach": "Mister Stefano Vitale",
-    "trainingDay": "Lun · Mer · Ven 19:00",
+    "coach": " Stefano Vitale",
     "players": [
       { "id": "a1", "name": "Christian De Luca", "role": "Portiere", "number": 1, "stats": { "tecnica": 7, "velocita": 6, "grinta": 8 } },
       { "id": "a2", "name": "Manuel Caruso", "role": "Difensore", "number": 3, "stats": { "tecnica": 6, "velocita": 7, "grinta": 9 } },

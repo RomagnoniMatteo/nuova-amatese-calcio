@@ -23,7 +23,8 @@ const next = computed(() => episodesRaw[index.value + 1])
 <template>
   <section class="container episode" v-if="episode">
     <button class="back" @click="router.push('/serie?tab=storia')">← torna alla serie</button>
-    <p class="eyebrow episode-tag">episodio {{ String(episode.number).padStart(2, '0') }} · {{ formatDate(episode.date) }}</p>
+    <p class="eyebrow episode-tag">episodio {{ String(episode.number).padStart(2, '0') }} · {{ formatDate(episode.date)
+      }}</p>
     <h3 class="episode-title">{{ episode.title }}</h3>
 
     <transition name="content-fade" mode="out-in">
@@ -36,9 +37,11 @@ const next = computed(() => episodesRaw[index.value + 1])
     </transition>
 
     <nav class="pager">
-      <router-link v-if="prev" :to="`/serie/storia/${prev.id}`">← ep. {{ String(prev.number).padStart(2, '0') }}</router-link>
+      <router-link v-if="prev" :to="`/serie/storia/${prev.id}`">← ep. {{ String(prev.number).padStart(2, '0')
+        }}</router-link>
       <span v-else></span>
-      <router-link v-if="next" :to="`/serie/storia/${next.id}`">ep. {{ String(next.number).padStart(2, '0') }} →</router-link>
+      <router-link v-if="next" :to="`/serie/storia/${next.id}`">ep. {{ String(next.number).padStart(2, '0') }}
+        →</router-link>
     </nav>
   </section>
   <section class="container episode" v-else>

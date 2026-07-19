@@ -135,15 +135,24 @@ watch(() => props.url, render)
 }
 
 @keyframes pulse {
-  0%, 100% { opacity: 0.6; }
-  50%      { opacity: 1; }
+
+  0%,
+  100% {
+    opacity: 0.6;
+  }
+
+  50% {
+    opacity: 1;
+  }
 }
 
 @media (prefers-reduced-motion: reduce) {
+
   .skeleton-avatar,
   .skeleton-line {
     animation: none;
   }
+
   .ig-embed-wrap {
     transition: none;
   }

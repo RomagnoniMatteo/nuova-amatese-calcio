@@ -64,27 +64,60 @@
 }
 
 @keyframes float1 {
-  0%, 100% { transform: translate(0, 0) scale(1); }
-  33%      { transform: translate(60px, 40px) scale(1.1); }
-  66%      { transform: translate(-30px, 70px) scale(0.95); }
+
+  0%,
+  100% {
+    transform: translate(0, 0) scale(1);
+  }
+
+  33% {
+    transform: translate(60px, 40px) scale(1.1);
+  }
+
+  66% {
+    transform: translate(-30px, 70px) scale(0.95);
+  }
 }
 
 @keyframes float2 {
-  0%, 100% { transform: translate(0, 0) scale(1); }
-  50%      { transform: translate(-70px, -50px) scale(1.15); }
+
+  0%,
+  100% {
+    transform: translate(0, 0) scale(1);
+  }
+
+  50% {
+    transform: translate(-70px, -50px) scale(1.15);
+  }
 }
 
 @keyframes float3 {
-  0%, 100% { transform: translate(0, 0) rotate(0deg); }
-  50%      { transform: translate(50px, -30px) rotate(20deg); }
+
+  0%,
+  100% {
+    transform: translate(0, 0) rotate(0deg);
+  }
+
+  50% {
+    transform: translate(50px, -30px) rotate(20deg);
+  }
 }
 
 @keyframes drift {
-  0%   { transform: translate(0, 0); }
-  100% { transform: translate(42px, 42px); }
+  0% {
+    transform: translate(0, 0);
+  }
+
+  100% {
+    transform: translate(42px, 42px);
+  }
 }
 
 @media (prefers-reduced-motion: reduce) {
-  .blob, .bg-grid { animation: none; }
+
+  .blob,
+  .bg-grid {
+    animation: none;
+  }
 }
 </style>
