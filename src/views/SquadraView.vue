@@ -41,10 +41,11 @@ function openCard(playerId) {
 
 <template>
   <div class="page-wrap">
-   
+
     <section class="container page">
       <h1 class="page-title">Prima Squadra</h1>
-      
+
+
       <ComingSoon />
       <!--
       <div class="cta-row">
@@ -52,24 +53,12 @@ function openCard(playerId) {
         <a class="btn cta-big" href="#">▶ Calendario</a>
       </div>
 
-      <div
-        v-for="(list, group) in grouped"
-        :key="group"
-        class="group"
-      >
+      <div v-for="(list, group) in grouped" :key="group" class="group">
         <h2 class="group-title">{{ groupLabels[group] || group }}</h2>
 
         <div class="grid">
-          <article
-            v-for="(p, i) in list"
-            :key="p.playerId"
-            class="card-anim"
-            :style="{ '--delay': (i * 0.06) + 's' }"
-          >
-            <div
-              @click="openCard(p.playerId)"
-              class="pokedex-btn unlocked player pixel-border"
-            >
+          <article v-for="(p, i) in list" :key="p.playerId" class="card-anim" :style="{ '--delay': (i * 0.06) + 's' }">
+            <div @click="openCard(p.playerId)" class="pokedex-btn unlocked player pixel-border">
               <p class="player-name">{{ p.name }}</p>
               <p class="player-role">{{ p.role }}</p>
             </div>
@@ -80,25 +69,22 @@ function openCard(playerId) {
       <div class="group">
         <h2 class="group-title">Staff</h2>
         <div class="grid staff">
-          <article
-            v-for="(s, i) in staff"
-            :key="s.id"
-            class="player pixel-border staff-card card-anim"
-            :style="{ '--delay': (i * 0.06) + 's' }"
-          >
-            <span>{{ s.role }}: </span><p class="player-name">{{ s.name }}</p>
+          <article v-for="(s, i) in staff" :key="s.id" class="player pixel-border staff-card card-anim"
+            :style="{ '--delay': (i * 0.06) + 's' }">
+            <span>{{ s.role }}: </span>
+            <p class="player-name">{{ s.name }}</p>
           </article>
         </div>
       </div>
-      -->
 
       <PokedexModal :card="activeCard" @close="activeCard = null" />
+    -->
     </section>
   </div>
+
 </template>
 
 <style scoped>
-
 .cta-row {
   display: flex;
   justify-content: start;

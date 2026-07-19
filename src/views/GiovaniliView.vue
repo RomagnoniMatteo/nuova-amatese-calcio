@@ -52,20 +52,15 @@ function initials(name) {
 <template>
   <section class="container page">
     <h1 class="page-title">Giovanili</h1>
-    
-    <ComingSoon/>
+
+    <ComingSoon />
     <!-- 
     <nav class="team-pager">
       <button class="pager-arrow" @click="prevTeam" aria-label="Squadra precedente">←</button>
 
       <div class="team-tabs">
-        <button
-          v-for="(t, i) in teams"
-          :key="t.id"
-          class="team-tab"
-          :class="{ active: i === currentIndex }"
-          @click="goTo(i)"
-        >
+        <button v-for="(t, i) in teams" :key="t.id" class="team-tab" :class="{ active: i === currentIndex }"
+          @click="goTo(i)">
           {{ t.name }}
         </button>
       </div>
@@ -80,21 +75,16 @@ function initials(name) {
       </div>
       <div class="team-meta-col">
         <p class="team-meta">👔 {{ currentTeam.coach }}</p>
-        <p class="team-meta">⏱ Allenamenti: {{ currentTeam.trainingDay }}</p>
       </div>
     </div>
 
     <div class="grid">
-      <button
-        v-for="(p, i) in currentTeam.players"
-        :key="p.id"
-        class="card-flip"
-        :class="{ flipped: flipped[p.id] }"
-        @click="toggleFlip(p.id)"
-      >
+      <button v-for="(p, i) in currentTeam.players" :key="p.id" class="card-flip" :class="{ flipped: flipped[p.id] }"
+        @click="toggleFlip(p.id)">
         <div class="card-inner">
           <div class="card-face card-front pixel-border" :class="roleClass[p.role]">
-            <span class="card-number">N. {{ cardNumber(currentIndex, i) }}/{{ String(totalCards).padStart(3, '0') }}</span>
+            <span class="card-number">N. {{ cardNumber(currentIndex, i) }}/{{ String(totalCards).padStart(3, '0')
+              }}</span>
             <div class="avatar">
               <span class="avatar-initials">{{ initials(p.name) }}</span>
             </div>
@@ -105,16 +95,12 @@ function initials(name) {
         </div>
       </button>
     </div>
--->
+    -->
+
   </section>
 </template>
 
 <style scoped>
-.page {
-  padding-block: 2rem 3rem;
-}
-
-
 /* selettore squadre */
 .team-pager {
   display: flex;
@@ -122,6 +108,7 @@ function initials(name) {
   gap: 0.6rem;
   margin-bottom: 1.2rem;
 }
+
 .pager-arrow {
   flex: none;
   background: var(--pitch);
@@ -133,6 +120,7 @@ function initials(name) {
   font-size: 1rem;
   cursor: pointer;
 }
+
 .team-tabs {
   display: flex;
   gap: 0.5rem;
@@ -140,6 +128,7 @@ function initials(name) {
   flex: 1;
   padding-bottom: 0.2rem;
 }
+
 .team-tab {
   flex: none;
   font-family: var(--font-mono);
@@ -151,6 +140,7 @@ function initials(name) {
   cursor: pointer;
   color: var(--ink);
 }
+
 .team-tab.active {
   background: var(--amatese-yellow);
   border-color: var(--pitch);
@@ -168,14 +158,17 @@ function initials(name) {
   gap: 0.6rem;
   margin-bottom: 1.6rem;
 }
+
 .team-name {
   margin: 0 0 0.2rem;
   color: var(--amatese-yellow);
   font-size: 1.1rem;
 }
+
 .team-meta-col {
   text-align: right;
 }
+
 .team-meta {
   font-family: var(--font-mono);
   font-size: 0.78rem;
@@ -189,6 +182,7 @@ function initials(name) {
   grid-template-columns: repeat(auto-fill, minmax(150px, 1fr));
   gap: 1rem;
 }
+
 .card-flip {
   background: none;
   border: none;
@@ -196,10 +190,11 @@ function initials(name) {
   cursor: pointer;
   perspective: 1000px;
   height: 200px;
-    width: 100%;
+  width: 100%;
   font: inherit;
   text-align: left;
 }
+
 .card-inner {
   position: relative;
   width: 100%;
@@ -207,9 +202,11 @@ function initials(name) {
   transition: transform 0.5s;
   transform-style: preserve-3d;
 }
+
 .card-flip.flipped .card-inner {
   transform: rotateY(180deg);
 }
+
 .card-face {
   position: absolute;
   inset: 0;
@@ -224,10 +221,21 @@ function initials(name) {
 }
 
 /* colori per ruolo, come i "tipi" pokémon */
-.role-portiere { border-top: 6px solid #4a7fd6; }
-.role-difensore { border-top: 6px solid var(--pixel-green); }
-.role-centrocampista { border-top: 6px solid var(--amatese-yellow); }
-.role-attaccante { border-top: 6px solid #d64550; }
+.role-portiere {
+  border-top: 6px solid #4a7fd6;
+}
+
+.role-difensore {
+  border-top: 6px solid var(--pixel-green);
+}
+
+.role-centrocampista {
+  border-top: 6px solid var(--amatese-yellow);
+}
+
+.role-attaccante {
+  border-top: 6px solid #d64550;
+}
 
 .card-number {
   align-self: flex-start;
@@ -236,6 +244,7 @@ function initials(name) {
   color: var(--pitch);
   opacity: 0.75;
 }
+
 .avatar {
   width: 72px;
   height: 72px;
@@ -247,17 +256,20 @@ function initials(name) {
   justify-content: center;
   margin: 0.5rem 0;
 }
+
 .avatar-initials {
   font-weight: 700;
   color: var(--paper);
   font-size: 1.1rem;
   font-family: var(--font-mono);
 }
+
 .player-name {
   font-weight: 700;
   margin: 0.2rem 0 0.1rem;
   font-size: 0.85rem;
 }
+
 .player-role {
   font-family: var(--font-mono);
   font-size: 0.7rem;
@@ -269,6 +281,7 @@ function initials(name) {
   .team-header {
     flex-direction: column;
   }
+
   .team-meta-col {
     text-align: left;
   }
