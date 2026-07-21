@@ -1,7 +1,6 @@
 <script setup>
 import { computed, ref } from 'vue'
 import teamsRaw from '../data/giovanili.json'
-import '../styles/page.css'
 import ComingSoon from '../components/ComingSoon.vue'
 
 const teams = teamsRaw

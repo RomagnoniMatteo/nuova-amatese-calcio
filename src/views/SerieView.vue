@@ -1,5 +1,5 @@
 <script setup>
-import '../styles/page.css'
+
 import { computed } from 'vue'
 import { useRoute, useRouter } from 'vue-router'
 import episodesRaw from '../data/episodes.json'

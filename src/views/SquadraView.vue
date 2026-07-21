@@ -1,5 +1,5 @@
 <script setup>
-import '../styles/page.css'
+
 import { computed, ref } from 'vue'
 import players from '../data/pokedex.json'
 import staff from '../data/staff.json'
@@ -45,9 +45,8 @@ function openCard(playerId) {
     <section class="container page">
       <h1 class="page-title">Prima Squadra</h1>
 
-
       <ComingSoon />
-      <!--
+       <!--
       <div class="cta-row">
         <a class="btn cta-big" href="#">▶ Classifica</a>
         <a class="btn cta-big" href="#">▶ Calendario</a>
@@ -69,7 +68,7 @@ function openCard(playerId) {
       <div class="group">
         <h2 class="group-title">Staff</h2>
         <div class="grid staff">
-          <article v-for="(s, i) in staff" :key="s.id" class="player pixel-border staff-card card-anim"
+          <article v-for="(s, i) in staff" :key="s.id" class="player pixel-border staff-card"
             :style="{ '--delay': (i * 0.06) + 's' }">
             <span>{{ s.role }}: </span>
             <p class="player-name">{{ s.name }}</p>
@@ -156,20 +155,6 @@ function openCard(playerId) {
   font-size: 0.78rem;
   color: var(--pitch);
   margin: 0 0 0.6rem;
-}
-
-/* ---------- CTA ---------- */
-.cta-big {
-  justify-content: center;
-  text-align: center;
-  font-size: 0.9rem;
-  padding: 0.9rem 1rem;
-  transition: background-color 0.2s ease, transform 0.2s ease;
-}
-
-.cta-big:hover {
-  background-color: var(--paper);
-  transform: translateY(-2px);
 }
 
 /* ---------- POKEDEX CARD ---------- */

@@ -1,7 +1,7 @@
 <script setup>
 import { ref, onMounted } from 'vue'
 import club from '../data/club.json'
-import '../styles/page.css'
+
 
 const mapQuery = encodeURIComponent('Nuova amatese calcio')
 const mapSrc = `https://www.google.com/maps?q=${mapQuery}&output=embed`
@@ -223,19 +223,6 @@ onMounted(() => {
 .social-row a:hover {
   opacity: 0.7;
   border-bottom-style: solid;
-}
-
-.cta-big {
-  justify-content: center;
-  text-align: center;
-  font-size: 0.9rem;
-  padding: 0.9rem 1rem;
-  transition: transform 0.2s ease, box-shadow 0.2s ease;
-}
-
-.cta-big:hover {
-  transform: translateY(-2px);
-  box-shadow: 0 10px 18px -10px rgba(0, 0, 0, 0.5);
 }
 
 .legal {
