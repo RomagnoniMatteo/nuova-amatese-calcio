@@ -22,7 +22,7 @@ const next = computed(() => episodesRaw[index.value + 1])
 
 <template>
   <section class="container episode" v-if="episode">
-    <button class="back" @click="router.push('/serie?tab=storia')">← torna alla serie</button>
+    <button class="back" @click="router.push('/serie?tab=storia')">← episodi</button>
     <p class="eyebrow episode-tag">episodio {{ String(episode.number).padStart(2, '0') }} · {{ formatDate(episode.date)
       }}</p>
     <h3 class="episode-title">{{ episode.title }}</h3>
