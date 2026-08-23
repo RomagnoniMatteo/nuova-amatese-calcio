@@ -5,8 +5,9 @@
     "name": "Andrea Lanzoni",
     "group": "P",
     "role": "Portiere",
+    "statsUrl": "https://www.tuttocampo.it/Lombardia/TerzaCategoria/GironeBMilano/Giocatore/Scheda/10024737/Scheda",
     "unlockDate": "2026-07-15",
-    "instagramUrl": "https://scontent-mxp2-1.cdninstagram.com/v/t51.82787-15/733194797_17886809301660106_500211681041159466_n.webp?_nc_cat=100&ig_cache_key=MzkzNTg0NTQ1NzU3Njc1NDQ3Mw%3D%3D.3-ccb7-5&ccb=7-5&_nc_sid=58cdad&efg=eyJ2ZW5jb2RlX3RhZyI6IkNBUk9VU0VMX0lURU0ueHBpZHMuMTA4MC5zZHIucmVndWxhcl9waG90by5DMyJ9&_nc_ohc=Yo9_iVx-uOoQ7kNvwHrHU28&_nc_oc=AdrfWzsupERTxImciTN9PqV9blCytzIuZ803eBdY9eBhDPlH2h5qCv2KvwcNXlOvB85w8amfpd4kBDadGVCxAL2m&_nc_ad=z-m&_nc_cid=0&_nc_zt=23&_nc_ht=scontent-mxp2-1.cdninstagram.com&_nc_gid=L3m6yq0j_xnShKR-TKTJyQ&_nc_ss=7a22e&oh=00_AQCYY2XJY_-tt3yT9PFBOwQrR8L3U-Skx-IWblkPu090QA&oe=6A5D4BBB"
+    "instagramUrl": "https://scontent-mxp2-1.cdninstagram.com/v/t51.82787-15/772839762_17895652494660106_5433106825670064042_n.webp?_nc_cat=105&ig_cache_key=Mzk2NTAxNjMyNDM5NTEyMTEwMw%3D%3D.3-ccb7-5&ccb=7-5&_nc_sid=58cdad&efg=eyJ2ZW5jb2RlX3RhZyI6IkZFRUQueHBpZHMuMTA4MC5zZHIucmVndWxhcl9waG90by5DMyJ9&_nc_ohc=fQRE_eLYPkgQ7kNvwH_m8Tp&_nc_oc=AdoQl8-uXUlZGS8PbwLiim1TXeeJsGaOIJlb38Vd_h41vuO4RyF_B6R9N4yN7HtXI-C15iFGoHUp52q9Fhav2Nez&_nc_ad=z-m&_nc_cid=0&_nc_zt=23&_nc_ht=scontent-mxp2-1.cdninstagram.com&_nc_gid=KikhVqEezZZ8KCT7dPxC4w&_nc_ss=7a22e&oh=00_AQESwKOCi_M5aOIhMEQHWXGPQ-RNLMgWipwl9psTF3lmWQ&oe=6A909AB6"
   },
    {
     "number": 2,
@@ -14,16 +15,21 @@
     "name": "Andrea Cendamo",
     "group": "P",
     "role": "Portiere",
-    "unlockDate": "2026-07-07",
+    "statsUrl": "https://www.tuttocampo.it/Lombardia/TerzaCategoria/GironeBMilano/Giocatore/Scheda/9289846/Scheda",
+    "unlockDate": "2026-07-15",
     "instagramUrl": null
     },
+
+
+
      {
     "number": 3,
     "playerId": "galli",
     "name": "Federico Galli",
     "group": "D",
     "role": "Difensore",
-    "unlockDate": "2026-07-07",
+    "statsUrl": "https://www.tuttocampo.it/Lombardia/TerzaCategoria/GironeBMilano/Giocatore/Scheda/10048734/Scheda",
+    "unlockDate": "2026-07-15",
     "instagramUrl": null
     }, {
     "number": 4,
@@ -31,7 +37,8 @@
     "name": "Luca Brichetti",
     "group": "D",
     "role": "Difensore",
-    "unlockDate": "2026-07-07",
+    "statsUrl": "https://www.tuttocampo.it/Lombardia/TerzaCategoria/GironeBMilano/Giocatore/Scheda/7284525/Scheda",
+    "unlockDate": "2026-07-15",
     "instagramUrl": null
     }, {
     "number": 5,
@@ -39,47 +46,63 @@
     "name": "Alessandro Campi",
     "group": "D",
     "role": "Difensore",
-    "unlockDate": "2026-07-07",
+    "statsUrl": "https://www.tuttocampo.it/Lombardia/TerzaCategoria/GironeBMilano/Giocatore/Scheda/7700298/Scheda",
+    "unlockDate": "2026-07-15",
     "instagramUrl": null
-    }, {
+    },  {
     "number": 6,
-    "playerId": "ianna",
-    "name": "Francesco Iannace",
-    "group": "D",
-    "role": "Difensore",
-    "unlockDate": "2026-07-07",
-    "instagramUrl": null
-    }, {
-    "number": 7,
-    "playerId": "baldo",
-    "name": "Fecerico Baldo",
-    "group": "D",
-    "role": "Difensore",
-    "unlockDate": "2026-07-07",
-    "instagramUrl": null
-    }, {
-    "number": 9,
     "playerId": "mark",
     "name": "Mark Nava",
     "group": "D",
     "role": "Difensore",
-    "unlockDate": "2026-07-07",
+    "statsUrl": "https://www.tuttocampo.it/Lombardia/TerzaCategoria/GironeBMilano/Giocatore/Scheda/8572416/Scheda",
+    "unlockDate": "2026-07-15",
     "instagramUrl": null
-    }, {
-    "number": 10,
+    },{
+    "number": 7,
     "playerId": "cazza",
     "name": "Mattia Cazzaniga",
     "group": "D",
     "role": "Difensore",
-    "unlockDate": "2026-07-07",
+    "statsUrl": "https://www.tuttocampo.it/Lombardia/TerzaCategoria/GironeBMilano/Giocatore/Scheda/8042600/Scheda",
+    "unlockDate": "2026-07-15",
+    "instagramUrl": null
+    },  {
+    "number": 8,
+    "playerId": "ianna",
+    "name": "Francesco Iannace",
+    "group": "D",
+    "role": "Difensore",
+    "statsUrl": "https://www.tuttocampo.it/Lombardia/TerzaCategoria/GironeBMilano/Giocatore/Scheda/9099191/Scheda",
+    "unlockDate": "2026-07-15",
     "instagramUrl": null
     }, {
+    "number": 9,
+    "playerId": "baldo",
+    "name": "Federico Baldo",
+    "group": "D",
+    "role": "Difensore",
+    "statsUrl": "https://www.tuttocampo.it/Lombardia/TerzaCategoria/GironeBMilano/Giocatore/Scheda/7435397/Scheda",
+    "unlockDate": "2026-07-15",
+    "instagramUrl": null
+    }, {
+    "number": 10,
+    "playerId": "stemmi",
+    "name": "Luca Stemmi",
+    "group": "D",
+    "role": "Difensore",
+    "statsUrl": "https://www.tuttocampo.it/Lombardia/TerzaCategoria/GironeBMilano/Giocatore/Scheda/9389752/Scheda",
+    "unlockDate": "2026-07-15",
+    "instagramUrl": null
+    },
+    {
     "number": 11,
     "playerId": "tommy",
     "name": "Tommaso Laporta",
     "group": "D",
     "role": "Difensore",
-    "unlockDate": "2026-07-07",
+    "statsUrl": "https://www.tuttocampo.it/Lombardia/TerzaCategoria/GironeBMilano/Giocatore/Scheda/8398380/Scheda",
+    "unlockDate": "2026-07-15",
     "instagramUrl": null
     }, {
     "number": 12,
@@ -87,23 +110,188 @@
     "name": "Denis Semanaj",
     "group": "D",
     "role": "Difensore",
-    "unlockDate": "2026-07-07",
+    "statsUrl": "https://www.tuttocampo.it/Lombardia/TerzaCategoria/GironeBMilano/Giocatore/Scheda/10023568/Scheda",
+    "unlockDate": "2026-07-15",
     "instagramUrl": null
     }, {
     "number": 13,
     "playerId": "mosco",
-    "name": "Mosconi",
+    "name": "Lorenzo Mosconi",
     "group": "D",
     "role": "Difensore",
-    "unlockDate": "2026-07-07",
+    "statsUrl": "https://www.tuttocampo.it/Lombardia/TerzaCategoria/GironeBMilano/Giocatore/Scheda/9653678/Scheda",
+    "unlockDate": "2026-07-15",
     "instagramUrl": null
     }, {
     "number": 14,
     "playerId": "longo",
-    "name": "Longoni",
+    "name": "Matteo Longoni",
     "group": "D",
     "role": "Difensore",
-    "unlockDate": "2026-07-07",
+    "statsUrl": "https://www.tuttocampo.it/Lombardia/TerzaCategoria/GironeBMilano/Giocatore/Scheda/8011681/Scheda",
+    "unlockDate": "2026-07-15",
+    "instagramUrl": null
+    }, {
+    "number": 15,
+    "playerId": "cafiero",
+    "name": "Nicolò Cafiero",
+    "group": "D",
+    "role": "Difensore",
+    "statsUrl": "https://www.tuttocampo.it/Lombardia/TerzaCategoria/GironeBMilano/Giocatore/Scheda/7770780/Scheda",
+    "unlockDate": "2026-07-15",
+    "instagramUrl": null
+    },
+
+
+
+    {
+    "number": 16,
+    "playerId": "pina",
+    "name": "Patrick Jhoel Pina",
+    "group": "C",
+    "role": "Centrocampista",
+    "statsUrl": "https://www.tuttocampo.it/Lombardia/TerzaCategoria/GironeBMilano/Giocatore/Scheda/10322892/Scheda",
+    "unlockDate": "2026-07-15",
+    "instagramUrl": null
+    }, {
+    "number": 17,
+    "playerId": "papi",
+    "name": "Sora Hector Gomez",
+    "group": "C",
+    "role": "Centrocampista",
+    "statsUrl": "https://www.tuttocampo.it/Lombardia/TerzaCategoria/GironeBMilano/Giocatore/Scheda/8960812/Scheda",
+    "unlockDate": "2026-07-15",
+    "instagramUrl": null
+    },{
+    "number": 18,
+    "playerId": "j",
+    "name": "Giorgio Meregalli",
+    "group": "C",
+    "role": "Centrocampista",
+    "statsUrl": "https://www.tuttocampo.it/Lombardia/TerzaCategoria/GironeBMilano/Giocatore/Scheda/10023566/Scheda",
+    "unlockDate": "2026-07-15",
+    "instagramUrl": null
+    },{
+    "number": 19,
+    "playerId": "ghirlo",
+    "name": "Alessandro Ghirlandi",
+    "group": "C",
+    "role": "Centrocampista",
+    "statsUrl": "https://www.tuttocampo.it/Lombardia/TerzaCategoria/GironeBMilano/Giocatore/Scheda/10023562/Scheda",
+    "unlockDate": "2026-07-15",
+    "instagramUrl": null
+    },{
+    "number": 20,
+    "playerId": "thias",
+    "name": "Mathias Giannoni",
+    "group": "C",
+    "role": "Centrocampista",
+    "statsUrl": "https://www.tuttocampo.it/Lombardia/TerzaCategoria/GironeBMilano/Giocatore/Scheda/7620046/Scheda",
+    "unlockDate": "2026-07-15",
+    "instagramUrl": null
+    },{
+    "number": 21,
+    "playerId": "vela",
+    "name": "Emanuele Velardo",
+    "group": "C",
+    "role": "Centrocampista",
+    "statsUrl": "https://www.tuttocampo.it/Lombardia/TerzaCategoria/GironeBMilano/Giocatore/Scheda/7573869/Scheda",
+    "unlockDate": "2026-07-15",
+    "instagramUrl": null
+    },{
+    "number": 22,
+    "playerId": "bonvi",
+    "name": "Mattia Bonvino",
+    "group": "C",
+    "role": "Centrocampista",
+    "statsUrl": "https://www.tuttocampo.it/Lombardia/TerzaCategoria/GironeBMilano/Giocatore/Scheda/8687888/Scheda",
+    "unlockDate": "2026-07-15",
+    "instagramUrl": null
+    },{
+    "number": 23,
+    "playerId": "vaghi",
+    "name": "Simone Vaghi",
+    "group": "C",
+    "role": "Centrocampista",
+    "statsUrl": "https://www.tuttocampo.it/Lombardia/TerzaCategoria/GironeBMilano/Giocatore/Scheda/8268144/Scheda",
+    "unlockDate": "2026-07-15",
+    "instagramUrl": null
+    },{
+    "number": 24,
+    "playerId": "terno",
+    "name": "Andrea Terno",
+    "group": "C",
+    "role": "Centrocampista",
+    "statsUrl": "https://www.tuttocampo.it/Lombardia/TerzaCategoria/GironeBMilano/Giocatore/Scheda/7876097/Scheda",
+    "unlockDate": "2026-07-15",
+    "instagramUrl": null
+    },{
+    "number": 25,
+    "playerId": "alaimo",
+    "name": "Emanuele Alaimo",
+    "group": "C",
+    "role": "Centrocampista",
+    "statsUrl": "https://www.tuttocampo.it/Lombardia/TerzaCategoria/GironeBMilano/Giocatore/Scheda/10415691/Scheda",
+    "unlockDate": "2026-07-15",
+    "instagramUrl": null
+    },
+
+
+
+
+    {
+    "number": 26,
+    "playerId": "enava",
+    "name": "Erik Nava",
+    "group": "A",
+    "role": "Attaccante",
+    "statsUrl": "https://www.tuttocampo.it/Lombardia/TerzaCategoria/GironeBMilano/Giocatore/Scheda/10023567/Scheda",
+    "unlockDate": "2026-07-15",
+    "instagramUrl": null
+    },  {
+    "number": 27,
+    "playerId": "flo",
+    "name": "Flavio Hoxha",
+    "group": "A",
+    "role": "Attaccante",
+    "statsUrl": "https://www.tuttocampo.it/Lombardia/TerzaCategoria/GironeBMilano/Giocatore/Scheda/10168129/Scheda",
+    "unlockDate": "2026-07-15",
+    "instagramUrl": null
+    }, {
+    "number": 28,
+    "playerId": "visma",
+    "name": "Mattia Vismara",
+    "group": "A",
+    "role": "Attaccante",
+    "statsUrl": "https://www.tuttocampo.it/Lombardia/TerzaCategoria/GironeBMilano/Giocatore/Scheda/9903700/Scheda",
+    "unlockDate": "2026-07-15",
+    "instagramUrl": null
+    }, {
+    "number": 29,
+    "playerId": "zini",
+    "name": "Adriano Zini",
+    "group": "A",
+    "role": "Attaccante",
+    "statsUrl": "https://www.tuttocampo.it/Lombardia/TerzaCategoria/GironeBMilano/Giocatore/Scheda/7521875/Scheda",
+    "unlockDate": "2026-07-15",
+    "instagramUrl": null
+    }, {
+    "number": 30,
+    "playerId": "seba",
+    "name": "Sebastiano Berardi",
+    "group": "A",
+    "role": "Attaccante",
+    "statsUrl": "https://www.tuttocampo.it/Lombardia/TerzaCategoria/GironeBMilano/Giocatore/Scheda/10185815/Scheda",
+    "unlockDate": "2026-07-15",
+    "instagramUrl": null
+    }, {
+    "number": 31,
+    "playerId": "fallu",
+    "name": "Serigne Mouhama Konate",
+    "group": "A",
+    "role": "Attaccante",
+    "statsUrl": "https://www.tuttocampo.it/Lombardia/TerzaCategoria/GironeBMilano/Giocatore/Scheda/8243329/Scheda",
+    "unlockDate": "2026-07-15",
     "instagramUrl": null
     }
 ]

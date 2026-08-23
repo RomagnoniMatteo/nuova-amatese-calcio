@@ -6,7 +6,6 @@ import staff from '../data/staff.json'
 import pokedexRaw from '../data/pokedex.json'
 import { withUnlockState, formatDate } from '../composables/useUnlock'
 import PokedexModal from '../components/PokedexModal.vue'
-import ComingSoon from '../components/ComingSoon.vue'
 
 const groupLabels = {
   P: 'Portieri',
@@ -44,14 +43,16 @@ function openCard(playerId) {
 
     <section class="container page">
       <h1 class="page-title">Prima Squadra</h1>
-
-      <ComingSoon />
-       <!--
+       
+      
       <div class="cta-row">
-        <a class="btn cta-big" href="#">▶ Classifica</a>
-        <a class="btn cta-big" href="#">▶ Calendario</a>
+        <a class="btn cta-big" href="https://www.tuttocampo.it/Lombardia/TerzaCategoria/GironeBMilano/Classifica" target="_blank">▶ Classifica</a>
+        <a class="btn cta-big" href="https://www.tuttocampo.it/Lombardia/TerzaCategoria/GironeBMilano/Squadra/NuovaAmateseCalcio/1200099/Calendario" target="_blank">
+          ▶ Calendario
+        </a>
       </div>
-
+      
+      <!--PLAYERS-->
       <div v-for="(list, group) in grouped" :key="group" class="group">
         <h2 class="group-title">{{ groupLabels[group] || group }}</h2>
 
@@ -65,7 +66,8 @@ function openCard(playerId) {
         </div>
       </div>
 
-      <div class="group">
+         <!--STAFF-->
+     <div class="group">
         <h2 class="group-title">Staff</h2>
         <div class="grid staff">
           <article v-for="(s, i) in staff" :key="s.id" class="player pixel-border staff-card"
@@ -75,9 +77,10 @@ function openCard(playerId) {
           </article>
         </div>
       </div>
+     
 
       <PokedexModal :card="activeCard" @close="activeCard = null" />
-    -->
+    
     </section>
   </div>
 

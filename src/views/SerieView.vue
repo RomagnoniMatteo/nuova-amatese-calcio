@@ -16,7 +16,7 @@ function setTab(t) {
 }
 
 const episodes = withUnlockState(episodesRaw, 'date')
-const podcasts = withUnlockState(podcastsRaw, 'date').slice().reverse()
+const podcasts = withUnlockState(podcastsRaw, 'date')
 </script>
 
 <template>

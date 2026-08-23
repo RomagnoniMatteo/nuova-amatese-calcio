@@ -42,7 +42,7 @@ watch(
               </p>
             </div>
 
-            <a class="btn cta-big" href="#">▶ Statistiche</a>
+            <a class="btn cta-big" :href="card.statsUrl" target="_blank">▶ Statistiche</a>
           </div>
         </transition>
       </div>
