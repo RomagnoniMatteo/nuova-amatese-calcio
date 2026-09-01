@@ -76,6 +76,13 @@
     "number": 11,
     "date": "2026-09-01",
     "title": "Questa è la verità.",
+    "instagramUrl": "https://www.instagram.com/p/Dcvc3GVDIT0/"
+  },
+  {
+    "id": "ep-12",
+    "number": 12,
+    "date": "2026-09-08",
+    "title": "Parola di professore.",
     "instagramUrl": null
   }
 
