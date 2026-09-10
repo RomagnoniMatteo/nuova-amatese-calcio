@@ -66,7 +66,7 @@ const links = [
       <span class="footer-legal">{{ club.legal }}</span>
 
 
-      <a class="footer-credit" href="https://www.linkedin.com/in/matteo-romagnoni-640878235/">
+      <a class="footer-credit" href="https://www.linkedin.com/in/matteo-romagnoni-640878235/" target="_blank">
 
         © 2026 <svg class="linkedin-icon" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" width="16" height="16"
           fill="currentColor">
