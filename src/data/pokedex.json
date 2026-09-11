@@ -223,12 +223,22 @@
     "statsUrl": "https://www.tuttocampo.it/Lombardia/TerzaCategoria/GironeBMilano/Giocatore/Scheda/7876097/Scheda",
     "unlockDate": "2026-07-15",
     "instagramUrl": null
-    },{
+    },
+    {
     "number": 25,
-    "playerId": "alaimo",
-    "name": "Emanuele Alaimo",
+    "playerId": "marchesi",
+    "name": "Nicolò Marchesi",
     "group": "C",
     "role": "Centrocampista",
+    "statsUrl": "https://www.tuttocampo.it/Lombardia/TerzaCategoria/GironeBMilano/Giocatore/Scheda/7971388/Scheda",
+    "unlockDate": "2026-07-15",
+    "instagramUrl": null
+    },{
+    "number": 26,
+    "playerId": "alaimo",
+    "name": "Emanuele Alaimo",
+    "group": "A",
+    "role": "Attaccante",
     "statsUrl": "https://www.tuttocampo.it/Lombardia/TerzaCategoria/GironeBMilano/Giocatore/Scheda/10415691/Scheda",
     "unlockDate": "2026-07-15",
     "instagramUrl": null
@@ -238,7 +248,7 @@
 
 
     {
-    "number": 26,
+    "number": 27,
     "playerId": "enava",
     "name": "Erik Nava",
     "group": "A",
@@ -247,7 +257,7 @@
     "unlockDate": "2026-07-15",
     "instagramUrl": null
     },  {
-    "number": 27,
+    "number": 28,
     "playerId": "flo",
     "name": "Flavio Hoxha",
     "group": "A",
@@ -256,7 +266,7 @@
     "unlockDate": "2026-07-15",
     "instagramUrl": null
     }, {
-    "number": 28,
+    "number": 29,
     "playerId": "visma",
     "name": "Mattia Vismara",
     "group": "A",
@@ -265,7 +275,7 @@
     "unlockDate": "2026-07-15",
     "instagramUrl": null
     }, {
-    "number": 29,
+    "number": 30,
     "playerId": "zini",
     "name": "Adriano Zini",
     "group": "A",
@@ -274,7 +284,7 @@
     "unlockDate": "2026-07-15",
     "instagramUrl": null
     }, {
-    "number": 30,
+    "number": 31,
     "playerId": "seba",
     "name": "Sebastiano Berardi",
     "group": "A",
@@ -283,7 +293,7 @@
     "unlockDate": "2026-07-15",
     "instagramUrl": null
     }, {
-    "number": 31,
+    "number": 32,
     "playerId": "fallu",
     "name": "Serigne Mouhama Konate",
     "group": "A",
