@@ -7,7 +7,7 @@
     "role": "Portiere",
     "statsUrl": "https://www.tuttocampo.it/Lombardia/TerzaCategoria/GironeBMilano/Giocatore/Scheda/10024737/Scheda",
     "unlockDate": "2026-07-15",
-    "instagramUrl": "src/assets/images/pokedex/pokedex LANZO.png"
+    "instagramUrl": "assets/images/pokedex/pokedex LANZO.png"
   },
    {
     "number": 2,
@@ -17,7 +17,7 @@
     "role": "Portiere",
     "statsUrl": "https://www.tuttocampo.it/Lombardia/TerzaCategoria/GironeBMilano/Giocatore/Scheda/9289846/Scheda",
     "unlockDate": "2026-07-15",
-    "instagramUrl": "src/assets/images/pokedex/pokedex CENDA.pnG"
+    "instagramUrl": "assets/images/pokedex/pokedex CENDA.pnG"
     },
 
      {
@@ -28,7 +28,7 @@
     "role": "Difensore",
     "statsUrl": "https://www.tuttocampo.it/Lombardia/TerzaCategoria/GironeBMilano/Giocatore/Scheda/10048734/Scheda",
     "unlockDate": "2026-07-15",
-    "instagramUrl": "src/assets/images/pokedex/pokedex GALLI.png"
+    "instagramUrl": "assets/images/pokedex/pokedex GALLI.png"
     }, {
     "number": 4,
     "playerId": "briche",
@@ -37,7 +37,7 @@
     "role": "Difensore",
     "statsUrl": "https://www.tuttocampo.it/Lombardia/TerzaCategoria/GironeBMilano/Giocatore/Scheda/7284525/Scheda",
     "unlockDate": "2026-07-15",
-    "instagramUrl": "src/assets/images/pokedex/pokedex BRICHE.png"
+    "instagramUrl": "assets/images/pokedex/pokedex BRICHE.png"
     }, {
     "number": 5,
     "playerId": "campi",
@@ -46,7 +46,7 @@
     "role": "Difensore",
     "statsUrl": "https://www.tuttocampo.it/Lombardia/TerzaCategoria/GironeBMilano/Giocatore/Scheda/7700298/Scheda",
     "unlockDate": "2026-07-15",
-    "instagramUrl": "src/assets/images/pokedex/pokedex CAMPI.png"
+    "instagramUrl": "assets/images/pokedex/pokedex CAMPI.png"
     },  {
     "number": 6,
     "playerId": "mark",
