@@ -26,10 +26,7 @@ function goTo(i) {
   currentIndex.value = i
 }
 
-const flipped = ref({})
-function toggleFlip(playerId) {
-  flipped.value = { ...flipped.value, [playerId]: !flipped.value[playerId] }
-}
+
 
 const roleClass = {
   Portiere: 'role-portiere',
@@ -53,7 +50,7 @@ function initials(name) {
     <h1 class="page-title">Giovanili</h1>
 
     <ComingSoon />
-    <!-- 
+     
     <nav class="team-pager">
       <button class="pager-arrow" @click="prevTeam" aria-label="Squadra precedente">←</button>
 
@@ -78,8 +75,7 @@ function initials(name) {
     </div>
 
     <div class="grid">
-      <button v-for="(p, i) in currentTeam.players" :key="p.id" class="card-flip" :class="{ flipped: flipped[p.id] }"
-        @click="toggleFlip(p.id)">
+      <button v-for="(p, i) in currentTeam.players" :key="p.id" class="card-flip" >
         <div class="card-inner">
           <div class="card-face card-front pixel-border" :class="roleClass[p.role]">
             <span class="card-number">N. {{ cardNumber(currentIndex, i) }}/{{ String(totalCards).padStart(3, '0')
@@ -94,7 +90,7 @@ function initials(name) {
         </div>
       </button>
     </div>
-    -->
+    
 
   </section>
 </template>
@@ -200,10 +196,6 @@ function initials(name) {
   height: 100%;
   transition: transform 0.5s;
   transform-style: preserve-3d;
-}
-
-.card-flip.flipped .card-inner {
-  transform: rotateY(180deg);
 }
 
 .card-face {

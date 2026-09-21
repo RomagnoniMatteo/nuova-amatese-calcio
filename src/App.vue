@@ -7,9 +7,9 @@ import AnimatedBackground from './components/AnimatedBackground.vue'
 const navOpen = ref(false)
 const links = [
   { to: '/squadra', label: 'Prima Squadra' },
-  { to: '/giovanili', label: 'Giovanili' },
   { to: '/serie', label: 'La Serie' },
 ]
+// { to: '/giovanili', label: 'Giovanili' },
 </script>
 
 <template>
