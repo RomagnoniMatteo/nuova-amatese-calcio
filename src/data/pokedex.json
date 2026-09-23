@@ -48,7 +48,7 @@
     "unlockDate": "2026-07-15",
     "instagramUrl": "pokedex/pokedex_CAMPI.png"
     },  {
-    "number": 6,
+    "number": 7,
     "playerId": "mark",
     "name": "Mark Nava",
     "group": "D",
@@ -57,7 +57,7 @@
     "unlockDate": "2026-07-15",
     "instagramUrl": null
     },{
-    "number": 7,
+    "number": 8,
     "playerId": "cazza",
     "name": "Mattia Cazzaniga",
     "group": "D",
@@ -66,14 +66,14 @@
     "unlockDate": "2026-07-15",
     "instagramUrl": null
     },  {
-    "number": 8,
+    "number": 6,
     "playerId": "ianna",
     "name": "Francesco Iannace",
     "group": "D",
     "role": "Difensore",
     "statsUrl": "https://www.tuttocampo.it/Lombardia/TerzaCategoria/GironeBMilano/Giocatore/Scheda/9099191/Scheda",
     "unlockDate": "2026-07-15",
-    "instagramUrl": null
+    "instagramUrl": "pokedex/pokedex_IANNA.png"
     }, {
     "number": 9,
     "playerId": "baldo",
