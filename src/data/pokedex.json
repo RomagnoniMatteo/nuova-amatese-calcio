@@ -56,8 +56,18 @@
     "statsUrl": "https://www.tuttocampo.it/Lombardia/TerzaCategoria/GironeBMilano/Giocatore/Scheda/9099191/Scheda",
     "unlockDate": "2026-07-15",
     "instagramUrl": "pokedex/pokedex_IANNA.png"
-    }, {
+    },
+    {
     "number": 7,
+    "playerId": "baldo",
+    "name": "Federico Baldo",
+    "group": "D",
+    "role": "Difensore",
+    "statsUrl": "https://www.tuttocampo.it/Lombardia/TerzaCategoria/GironeBMilano/Giocatore/Scheda/7435397/Scheda",
+    "unlockDate": "2026-07-15",
+    "instagramUrl": "pokedex/pokedex_BALDO.png"
+    }, {
+    "number": 8,
     "playerId": "mark",
     "name": "Mark Nava",
     "group": "D",
@@ -66,7 +76,7 @@
     "unlockDate": "2026-07-15",
     "instagramUrl": null
     },{
-    "number": 8,
+    "number": 9,
     "playerId": "cazza",
     "name": "Mattia Cazzaniga",
     "group": "D",
@@ -74,16 +84,8 @@
     "statsUrl": "https://www.tuttocampo.it/Lombardia/TerzaCategoria/GironeBMilano/Giocatore/Scheda/8042600/Scheda",
     "unlockDate": "2026-07-15",
     "instagramUrl": null
-    },  {
-    "number": 9,
-    "playerId": "baldo",
-    "name": "Federico Baldo",
-    "group": "D",
-    "role": "Difensore",
-    "statsUrl": "https://www.tuttocampo.it/Lombardia/TerzaCategoria/GironeBMilano/Giocatore/Scheda/7435397/Scheda",
-    "unlockDate": "2026-07-15",
-    "instagramUrl": null
-    }, {
+    },  
+     {
     "number": 10,
     "playerId": "stemmi",
     "name": "Luca Stemmi",
