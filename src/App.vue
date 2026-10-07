@@ -7,7 +7,7 @@ import AnimatedBackground from './components/AnimatedBackground.vue'
 const navOpen = ref(false)
 const links = [
   { to: '/squadra', label: 'Prima Squadra' },
-  { to: '/serie', label: 'La Serie' },
+   { to: '/serie', label: 'La Serie' },
 ]
 // { to: '/giovanili', label: 'Giovanili' },
 </script>
@@ -63,7 +63,7 @@ const links = [
     <div class="footer-line" aria-hidden="true"></div>
     <div class="footer-line footer-line-2" aria-hidden="true"></div>
     <div class="container footer-inner">
-      <span class="footer-legal">{{ club.legal }}</span>
+      <!--span class="footer-legal">{{ club.legal }}</span-->
 
       <a class="footer-credit" href="https://www.linkedin.com/in/matteo-romagnoni-640878235/" target="_blank">
 
