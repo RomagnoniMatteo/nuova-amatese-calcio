@@ -53,6 +53,40 @@
     "number": 8,
     "date": "2026-10-22",
     "title": "Diventerò una star.",
+    "instagramUrl": "https://www.instagram.com/p/Dey0z3bEdva"
+  },
+   {
+    "id": "ep-09",
+    "number": 9,
+    "date": "2026-10-29",
+    "title": "Prospettiva relativa.",
+    "instagramUrl": null
+  },
+   {
+    "id": "ep-10",
+    "number": 10,
+    "date": "2026-11-5",
+    "title": "Che sofferenza.",
+    "instagramUrl": null
+  },
+   {
+    "id": "ep-11",
+    "number": 11,
+    "date": "2026-11-12",
+    "title": "Il sindacato degli esclusi",
+    "instagramUrl": null
+  }
+  , {
+    "id": "ep-12",
+    "number": 12,
+    "date": "2026-11-19",
+    "title": "Barzellette.",
+    "instagramUrl": null
+  }, {
+    "id": "ep-13",
+    "number": 13,
+    "date": "2026-11-26",
+    "title": "Gli egizi.",
     "instagramUrl": null
   }
 ]
