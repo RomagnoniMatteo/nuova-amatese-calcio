@@ -161,5 +161,33 @@
     "date": "2026-11-24",
     "title": "Il resto deve venire dopo.",
     "instagramUrl": null
+  },
+  {
+    "id": "ep-24",
+    "number": 24,
+    "date": "2026-12-01",
+    "title": "Il direttivo.",
+    "instagramUrl": null
+  },
+   {
+    "id": "ep-25",
+    "number": 25,
+    "date": "2026-12-08",
+    "title": "Solo promesse.",
+    "instagramUrl": null
+  },
+   {
+    "id": "ep-26",
+    "number": 26,
+    "date": "2026-12-15",
+    "title": "Eccovi, finalmente.",
+    "instagramUrl": null
+  },
+   {
+    "id": "ep-27",
+    "number": 27,
+    "date": "2026-12-22",
+    "title": "I peggiori villain della storia.",
+    "instagramUrl": null
   }
 ]
