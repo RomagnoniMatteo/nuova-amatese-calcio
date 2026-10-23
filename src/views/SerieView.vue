@@ -1,11 +1,11 @@
 <script setup>
-import { computed, reactive } from 'vue'
+import { computed } from 'vue'
 import { useRoute, useRouter } from 'vue-router'
 import episodesRaw from '../data/episodes.json'
 import podcastsRaw from '../data/podcasts.json'
 import { withUnlockState, formatDate } from '../composables/useUnlock'
+import { preloadImage, isLoaded } from '../composables/useImagePreload'
 import LockedCard from '../components/LockedCard.vue'
-import PokeballLoader from '../components/PokeballLoader.vue'
 
 const route = useRoute()
 const router = useRouter()
@@ -18,20 +18,13 @@ function setTab(t) {
 const episodes = withUnlockState(episodesRaw, 'date')
 const podcasts = withUnlockState(podcastsRaw, 'date')
 
-// ---------- PRELOAD IMMAGINI ----------
-const COVER = 'amatese_copertina.png'
-const loaded = reactive({}) // url -> true quando pronta (o fallita, per non restare bloccati)
+// ---------- background cover con caricamento smooth ----------
+const COVER = `${import.meta.env.BASE_URL}amatese_copertina.png`
+const cardBlend = ['lighten', 'overlay']
+const cardPos = ['top center', 'center center']
 
-function preload(url) {
-  if (!url || url in loaded) return
-  loaded[url] = false
-  const img = new Image()
-  img.onload = img.onerror = () => { loaded[url] = true }
-  img.src = url
-}
-
-preload(COVER)
-podcasts.forEach((p) => p.unlocked && preload(p.imgCover))
+preloadImage(COVER)
+podcasts.forEach((p) => p.unlocked && preloadImage(p.imgCover))
 </script>
 
 <template>
@@ -58,14 +51,15 @@ podcasts.forEach((p) => p.unlocked && preload(p.imgCover))
             <li v-for="(ep, i) in episodes" :key="ep.id" class="entry entry-anim"
               :style="{ '--delay': `${i * 0.06}s` }">
               <span class="ep-number">{{ String(ep.number).padStart(2, '0') }}</span>
-              <router-link v-if="ep.unlocked" :to="`/serie/storia/${ep.id}`" class="entry-card pixel-border"
-                :style="loaded[COVER] ? {
-                  backgroundImage: `url('${COVER}')`,
-                  backgroundSize: 'cover',
-                  backgroundPosition: ['top center', 'center center'][i % 2],
-                  backgroundBlendMode: ['lighten', 'overlay'][i % 2]
-                } : {}">
-                <PokeballLoader v-if="!loaded[COVER]" />
+              <router-link v-if="ep.unlocked" :to="`/serie/storia/${ep.id}`"
+                class="entry-card bg-layer pixel-border"
+                :class="{ 'bg-ready': isLoaded(COVER) }"
+                :style="{
+                  '--delay': `${i * 0.06}s`,
+                  '--bg-img': `url('${COVER}')`,
+                  '--bg-pos': cardPos[i % 2],
+                  '--bg-blend': cardBlend[i % 2]
+                }">
                 <p class="entry-date">{{ formatDate(ep.date) }}</p>
                 <p class="entry-title">{{ ep.title }}</p>
               </router-link>
@@ -77,17 +71,15 @@ podcasts.forEach((p) => p.unlocked && preload(p.imgCover))
         <div v-else key="podcast" class="tab-panel">
           <div class="grid">
             <template v-for="(p, i) in podcasts" :key="p.id">
-              <router-link v-if="p.unlocked" :to="`/serie/podcast/${p.id}`" class="card pixel-border entry-anim"
+              <router-link v-if="p.unlocked" :to="`/serie/podcast/${p.id}`"
+                class="card bg-layer pixel-border entry-anim"
+                :class="{ 'bg-ready': isLoaded(p.imgCover) }"
                 :style="{
                   '--delay': `${i * 0.06}s`,
-                  ...(loaded[p.imgCover] ? {
-                    backgroundImage: `url('${p.imgCover}')`,
-                    backgroundSize: 'cover',
-                    backgroundBlendMode: 'multiply',
-                    backgroundPositionY: '-3rem'
-                  } : {})
+                  '--bg-img': `url('${p.imgCover}')`,
+                  '--bg-pos': '0% -3rem',
+                  '--bg-blend': 'multiply'
                 }">
-                <PokeballLoader v-if="!loaded[p.imgCover]" />
                 <p class="card-date">{{ formatDate(p.date) }}</p>
                 <p class="card-title">{{ p.title }}</p>
               </router-link>
@@ -156,6 +148,39 @@ podcasts.forEach((p) => p.unlocked && preload(p.imgCover))
   margin-top: 1rem;
 }
 
+/* ---------- BACKGROUND COVER (fade-in smooth) ---------- */
+.bg-layer {
+  position: relative;
+  isolation: isolate;
+}
+
+.bg-layer::before {
+  content: '';
+  position: absolute;
+  inset: 0;
+  z-index: -1;
+  border-radius: inherit;
+  background-color: inherit;
+  /* stesso colore della card, serve al blend */
+  background-image: var(--bg-img);
+  background-size: cover;
+  background-position: var(--bg-pos, center);
+  background-blend-mode: var(--bg-blend, normal);
+  opacity: 0;
+  transition: opacity 0.6s ease;
+  pointer-events: none;
+}
+
+.bg-layer.bg-ready::before {
+  opacity: 1;
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .bg-layer::before {
+    transition: none;
+  }
+}
+
 /* ---------- TIMELINE / CARD ---------- */
 .timeline {
   list-style: none;
@@ -187,7 +212,6 @@ podcasts.forEach((p) => p.unlocked && preload(p.imgCover))
 }
 
 .entry-card {
-  position: relative; /* necessario per il loader */
   background: var(--paper);
   text-decoration: none;
   color: var(--ink);
@@ -230,7 +254,6 @@ podcasts.forEach((p) => p.unlocked && preload(p.imgCover))
 }
 
 .card {
-  position: relative; /* necessario per il loader */
   background: var(--pitch);
   color: var(--paper);
   text-decoration: none;
