@@ -5,5 +5,5 @@ import vue from '@vitejs/plugin-vue'
 // https://<user>.github.io/<repo>/ without extra configuration.
 export default defineConfig({
   plugins: [vue()],
-  base: './',
+  base: '/nuova-amatese-calcio/',
 })

@@ -1,6 +1,5 @@
 <script setup>
 import { ref } from 'vue'
-import club from './data/club.json'
 import amateseImg from './assets/images/amatese.png'
 import AnimatedBackground from './components/AnimatedBackground.vue'
 
