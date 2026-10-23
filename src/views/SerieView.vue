@@ -1,11 +1,11 @@
 <script setup>
-
-import { computed } from 'vue'
+import { computed, reactive } from 'vue'
 import { useRoute, useRouter } from 'vue-router'
 import episodesRaw from '../data/episodes.json'
 import podcastsRaw from '../data/podcasts.json'
 import { withUnlockState, formatDate } from '../composables/useUnlock'
 import LockedCard from '../components/LockedCard.vue'
+import PokeballLoader from '../components/PokeballLoader.vue'
 
 const route = useRoute()
 const router = useRouter()
@@ -17,6 +17,21 @@ function setTab(t) {
 
 const episodes = withUnlockState(episodesRaw, 'date')
 const podcasts = withUnlockState(podcastsRaw, 'date')
+
+// ---------- PRELOAD IMMAGINI ----------
+const COVER = 'amatese_copertina.png'
+const loaded = reactive({}) // url -> true quando pronta (o fallita, per non restare bloccati)
+
+function preload(url) {
+  if (!url || url in loaded) return
+  loaded[url] = false
+  const img = new Image()
+  img.onload = img.onerror = () => { loaded[url] = true }
+  img.src = url
+}
+
+preload(COVER)
+podcasts.forEach((p) => p.unlocked && preload(p.imgCover))
 </script>
 
 <template>
@@ -43,12 +58,14 @@ const podcasts = withUnlockState(podcastsRaw, 'date')
             <li v-for="(ep, i) in episodes" :key="ep.id" class="entry entry-anim"
               :style="{ '--delay': `${i * 0.06}s` }">
               <span class="ep-number">{{ String(ep.number).padStart(2, '0') }}</span>
-              <router-link v-if="ep.unlocked" :to="`/serie/storia/${ep.id}`" class="entry-card pixel-border" :style="{
-                'backgroundImage': `url('amatese_copertina.png')`,
-                'background-size': 'cover',
-                'backgroundPosition': ['top center', 'center center'][i % 2],
-                'background-blend-mode': ['lighten', 'overlay'][i % 2]
-              }">
+              <router-link v-if="ep.unlocked" :to="`/serie/storia/${ep.id}`" class="entry-card pixel-border"
+                :style="loaded[COVER] ? {
+                  backgroundImage: `url('${COVER}')`,
+                  backgroundSize: 'cover',
+                  backgroundPosition: ['top center', 'center center'][i % 2],
+                  backgroundBlendMode: ['lighten', 'overlay'][i % 2]
+                } : {}">
+                <PokeballLoader v-if="!loaded[COVER]" />
                 <p class="entry-date">{{ formatDate(ep.date) }}</p>
                 <p class="entry-title">{{ ep.title }}</p>
               </router-link>
@@ -60,13 +77,17 @@ const podcasts = withUnlockState(podcastsRaw, 'date')
         <div v-else key="podcast" class="tab-panel">
           <div class="grid">
             <template v-for="(p, i) in podcasts" :key="p.id">
-              <router-link v-if="p.unlocked" :to="`/serie/podcast/${p.id}`" class="card pixel-border entry-anim" :style="{
-                '--delay': `${i * 0.06}s`,
-                'backgroundImage': `url('${p.imgCover}')`,
-                'background-size': 'cover',
-                'background-blend-mode': 'multiply',
-                'background-position-y': '-3rem'
-              }">
+              <router-link v-if="p.unlocked" :to="`/serie/podcast/${p.id}`" class="card pixel-border entry-anim"
+                :style="{
+                  '--delay': `${i * 0.06}s`,
+                  ...(loaded[p.imgCover] ? {
+                    backgroundImage: `url('${p.imgCover}')`,
+                    backgroundSize: 'cover',
+                    backgroundBlendMode: 'multiply',
+                    backgroundPositionY: '-3rem'
+                  } : {})
+                }">
+                <PokeballLoader v-if="!loaded[p.imgCover]" />
                 <p class="card-date">{{ formatDate(p.date) }}</p>
                 <p class="card-title">{{ p.title }}</p>
               </router-link>
@@ -166,6 +187,7 @@ const podcasts = withUnlockState(podcastsRaw, 'date')
 }
 
 .entry-card {
+  position: relative; /* necessario per il loader */
   background: var(--paper);
   text-decoration: none;
   color: var(--ink);
@@ -208,6 +230,7 @@ const podcasts = withUnlockState(podcastsRaw, 'date')
 }
 
 .card {
+  position: relative; /* necessario per il loader */
   background: var(--pitch);
   color: var(--paper);
   text-decoration: none;
