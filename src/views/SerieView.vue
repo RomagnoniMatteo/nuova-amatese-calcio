@@ -41,9 +41,14 @@ const podcasts = withUnlockState(podcastsRaw, 'date')
           <p class="eyebrow">Prima stagione</p>
           <ol class="timeline">
             <li v-for="(ep, i) in episodes" :key="ep.id" class="entry entry-anim"
-              :style="{ '--delay': (i * 0.06) + 's' }">
+              :style="{ '--delay': `${i * 0.06}s` }">
               <span class="ep-number">{{ String(ep.number).padStart(2, '0') }}</span>
-              <router-link v-if="ep.unlocked" :to="`/serie/storia/${ep.id}`" class="entry-card pixel-border">
+              <router-link v-if="ep.unlocked" :to="`/serie/storia/${ep.id}`" class="entry-card pixel-border" :style="{
+                'backgroundImage': `url('amatese_copertina.png')`,
+                'background-size': 'cover',
+                'backgroundPosition': ['top center', 'center center'][i % 2],
+                'background-blend-mode': ['lighten', 'overlay'][i % 2]
+              }">
                 <p class="entry-date">{{ formatDate(ep.date) }}</p>
                 <p class="entry-title">{{ ep.title }}</p>
               </router-link>

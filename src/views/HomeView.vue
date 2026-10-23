@@ -5,7 +5,6 @@ import podcastsRaw from '../data/podcasts.json'
 import club from '../data/club.json'
 import { withUnlockState, formatDate } from '../composables/useUnlock'
 import spogliatoioImg from '../assets/images/amatese_copertina.png'
-import amateseImg from '../assets/images/amatese.png'
 import PokeballLoader from '../components/PokeballLoader.vue'
 
 const episodes = withUnlockState(episodesRaw, 'date')
