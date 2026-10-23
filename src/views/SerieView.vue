@@ -68,7 +68,6 @@ podcasts.forEach((p) => p.unlocked && preloadImage(p.imgCover))
           </ol>
         </div>
 
-        
         <div v-else key="podcast" class="tab-panel">
           <div class="grid">
             <template v-for="(p, i) in podcasts" :key="p.id">
@@ -163,7 +162,7 @@ podcasts.forEach((p) => p.unlocked && preloadImage(p.imgCover))
   border-radius: inherit;
   background-color: inherit;
   /* stesso colore della card, serve al blend */
-  background-color: var(--bg-img);
+  background-image: var(--bg-img);
   background-size: cover;
   background-position: var(--bg-pos, center);
   background-blend-mode: var(--bg-blend, normal);
