@@ -162,8 +162,6 @@ podcasts.forEach((p) => p.unlocked && preloadImage(p.imgCover))
   z-index: -1;
   border-radius: inherit;
   background-color: inherit;
-  /* stesso colore della card, serve al blend */
-  background-image: var(--bg-img);
   background-size: cover;
   background-position: var(--bg-pos, center);
   background-blend-mode: var(--bg-blend, normal);
