@@ -55,8 +55,13 @@ const podcasts = withUnlockState(podcastsRaw, 'date')
         <div v-else key="podcast" class="tab-panel">
           <div class="grid">
             <template v-for="(p, i) in podcasts" :key="p.id">
-              <router-link v-if="p.unlocked" :to="`/serie/podcast/${p.id}`" class="card pixel-border entry-anim"
-                :style="{ '--delay': (i * 0.06) + 's' }">
+              <router-link v-if="p.unlocked" :to="`/serie/podcast/${p.id}`" class="card pixel-border entry-anim" :style="{
+                '--delay': `${i * 0.06}s`,
+                'backgroundImage': `url('${p.imgCover}')`,
+                'background-size': 'cover',
+                'background-blend-mode': 'multiply',
+                'background-position-y': '-3rem'
+              }">
                 <p class="card-date">{{ formatDate(p.date) }}</p>
                 <p class="card-title">{{ p.title }}</p>
               </router-link>

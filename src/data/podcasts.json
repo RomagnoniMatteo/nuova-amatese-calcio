@@ -4,6 +4,7 @@
     "number": 1,
     "date": "2026-08-20",
     "title": "Il segreto di Gaia.",
+    "imgCover": "cover/gaia.png",
     "instagramUrl": "https://www.instagram.com/p/DcQmxUHDIZT"
   },
   {
@@ -11,6 +12,7 @@
     "number": 2,
     "date": "2026-09-10",
     "title": "Il segreto per essere felici.",
+    "imgCover": "cover/nino.png",
     "instagramUrl": "https://www.instagram.com/p/DdJQOCCDFFj"
   },
    {
@@ -18,6 +20,7 @@
     "number": 3,
     "date": "2026-09-17",
     "title": "Playboy Pashy.",
+    "imgCover": "cover/pashy.png",
     "instagramUrl": "https://www.instagram.com/p/DdYpjpXDHN6"
   },
    {
@@ -25,6 +28,7 @@
     "number": 4,
     "date": "2026-09-24",
     "title": "L'arte di correre.",
+    "imgCover": "cover/marco.png",
     "instagramUrl": "https://www.instagram.com/p/DdqrI56jLjd"
   },
   {
@@ -32,6 +36,7 @@
     "number": 5,
     "date": "2026-10-01",
     "title": "Calimero.",
+    "imgCover": "cover/loris.png",
     "instagramUrl": "https://www.instagram.com/p/Dd8svY5jMKF"
   },
     {
@@ -39,6 +44,7 @@
     "number": 6,
     "date": "2026-10-08",
     "title": "Tennis.",
+    "imgCover": "cover/gio.png",
     "instagramUrl": "https://www.instagram.com/p/DeOxsPSkQyP"
   },
    {
@@ -46,6 +52,7 @@
     "number": 7,
     "date": "2026-10-15",
     "title": "Lavoro solo per LEI..",
+    "imgCover": "cover/inzo_rabo.png",
     "instagramUrl": "https://www.instagram.com/p/DegzQb6ET6z"
   },
    {
@@ -53,6 +60,7 @@
     "number": 8,
     "date": "2026-10-22",
     "title": "Diventerò una star.",
+    "imgCover": "cover/isa.png",
     "instagramUrl": "https://www.instagram.com/p/Dey0z3bEdva"
   },
    {
@@ -60,6 +68,7 @@
     "number": 9,
     "date": "2026-10-29",
     "title": "Prospettiva relativa.",
+    "imgCover":  "cover/cenda.png",
     "instagramUrl": null
   },
    {
@@ -67,6 +76,7 @@
     "number": 10,
     "date": "2026-11-5",
     "title": "Che sofferenza.",
+    "imgCover": "cover/giorgi.png",
     "instagramUrl": null
   },
    {
@@ -74,6 +84,7 @@
     "number": 11,
     "date": "2026-11-12",
     "title": "Il sindacato degli esclusi",
+    "imgCover": "cover/berta.png",
     "instagramUrl": null
   }
   , {
@@ -81,12 +92,14 @@
     "number": 12,
     "date": "2026-11-19",
     "title": "Barzellette.",
+    "imgCover": "cover/cenda.png",
     "instagramUrl": null
   }, {
     "id": "ep-13",
     "number": 13,
     "date": "2026-11-26",
     "title": "Gli egizi.",
+    "imgCover": "cover/marti.png",
     "instagramUrl": null
   },
    {
@@ -94,6 +107,7 @@
     "number": 14,
     "date": "2026-12-03",
     "title": "Cos'è il direttivo?",
+    "imgCover": "cover/pres.png",
     "instagramUrl": null
   },
    {
@@ -101,6 +115,7 @@
     "number": 15,
     "date": "2026-12-10",
     "title": "Minacce.",
+    "imgCover": "cover/berta.png",
     "instagramUrl": null
   },
   {
@@ -108,6 +123,7 @@
     "number": 16,
     "date": "2026-12-17",
     "title": "XXXXXXXXXXXXXXXXX",
+    "imgCover": "cover/cenda.png",
     "instagramUrl": null
   },
   {
@@ -115,6 +131,7 @@
     "number": 17,
     "date": "2027-01-14",
     "title": "XXXXXXXXXXXXXXXXX",
+    "imgCover": "cover/cenda.png",
     "instagramUrl": null
   },
    {
@@ -122,6 +139,7 @@
     "number": 18,
     "date": "2027-01-21",
     "title": "Aneddoti",
+    "imgCover": "cover/cenda.png",
     "instagramUrl": null
   },
   {
@@ -129,6 +147,7 @@
     "number": 19,
     "date": "2027-01-28",
     "title": "Il Contenitore.",
+    "imgCover": "cover/cenda.png",
     "instagramUrl": null
   },
    {
@@ -136,6 +155,7 @@
     "number": 20,
     "date": "2027-02-04",
     "title": "L'Amata",
+    "imgCover": "cover/cenda.png",
     "instagramUrl": null
   },
   {
@@ -143,6 +163,7 @@
     "number": 21,
     "date": "2027-02-11",
     "title": "San ValenNino",
+    "imgCover": "cover/cenda.png",
     "instagramUrl": null
   },
   {
@@ -150,6 +171,7 @@
     "number": 22,
     "date": "2027-02-18",
     "title": "Sanremo.",
+    "imgCover": "cover/cenda.png",
     "instagramUrl": null
   },
   {
@@ -157,6 +179,7 @@
     "number": 23,
     "date": "2027-02-25",
     "title": "Il vero villain.",
+    "imgCover": "cover/cenda.png",
     "instagramUrl": null
   },
   {
@@ -164,6 +187,7 @@
     "number": 24,
     "date": "2027-03-04",
     "title": "Un euro a piacere.",
+    "imgCover": "cover/cenda.png",
     "instagramUrl": null
   },
   {
@@ -171,6 +195,7 @@
     "number": 25,
     "date": "2027-03-11",
     "title": "Donne, dududu",
+    "imgCover": "cover/cenda.png",
     "instagramUrl": null
   },
   {
@@ -178,6 +203,7 @@
     "number": 26,
     "date": "2027-03-18",
     "title": "XXXXXXXXXXXXXXXXX",
+    "imgCover": "cover/cenda.png",
     "instagramUrl": null
   },
   {
@@ -185,6 +211,7 @@
     "number": 27,
     "date": "2027-03-25",
     "title": "XXXXXXXXXXXXXXXXX",
+    "imgCover": "cover/cenda.png",
     "instagramUrl": null
   },
     {
@@ -192,6 +219,7 @@
     "number": 28,
     "date": "2027-04-01",
     "title": "Confessioni admin.",
+    "imgCover": "cover/cenda.png",
     "instagramUrl": null
   },
   {
@@ -199,6 +227,7 @@
     "number": 29,
     "date": "2027-04-08",
     "title": "Paura eh.",
+    "imgCover": "cover/cenda.png",
     "instagramUrl": null
   },
   {
@@ -206,6 +235,7 @@
     "number": 30,
     "date": "2027-04-15",
     "title": "Momo, sei troppo intelligente.",
+    "imgCover": "cover/cenda.png",
     "instagramUrl": null
   },
   {
@@ -213,6 +243,7 @@
     "number": 31,
     "date": "2027-04-27",
     "title": "Grazie.",
+    "imgCover": "cover/cenda.png",
     "instagramUrl": null
   }
 ]
