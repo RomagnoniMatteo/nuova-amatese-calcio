@@ -84,16 +84,16 @@
     "statsUrl": "https://www.tuttocampo.it/Lombardia/TerzaCategoria/GironeBMilano/Giocatore/Scheda/8042600/Scheda",
     "unlockDate": "2026-07-15",
     "instagramUrl": "pokedex/pokedex_CAZZA.png"
-    },  
-     {
-    "number": 15,
-    "playerId": "stemmi",
-    "name": "Luca Stemmi",
-    "group": "C",
-    "role": "Centrocampista",
-    "statsUrl": "https://www.tuttocampo.it/Lombardia/TerzaCategoria/GironeBMilano/Giocatore/Scheda/9389752/Scheda",
+    }, 
+    {
+    "number": 10,
+    "playerId": "cafiero",
+    "name": "Nicolò Cafiero",
+    "group": "D",
+    "role": "Difensore",
+    "statsUrl": "https://www.tuttocampo.it/Lombardia/TerzaCategoria/GironeBMilano/Giocatore/Scheda/7770780/Scheda",
     "unlockDate": "2026-07-15",
-    "instagramUrl": "pokedex/pokedex_STEMMI.png"
+    "instagramUrl": "pokedex/pokedex_CAFIERO.png"
     },
     {
     "number": 11,
@@ -131,27 +131,18 @@
     "statsUrl": "https://www.tuttocampo.it/Lombardia/TerzaCategoria/GironeBMilano/Giocatore/Scheda/8011681/Scheda",
     "unlockDate": "2026-07-15",
     "instagramUrl": "pokedex/pokedex_LONGO.png"
-    }, {
-    "number": 10,
-    "playerId": "cafiero",
-    "name": "Nicolò Cafiero",
-    "group": "D",
-    "role": "Difensore",
-    "statsUrl": "https://www.tuttocampo.it/Lombardia/TerzaCategoria/GironeBMilano/Giocatore/Scheda/7770780/Scheda",
-    "unlockDate": "2026-07-15",
-    "instagramUrl": "pokedex/pokedex_CAFIERO.png"
-    },
-
-    {
-    "number": 20,
-    "playerId": "pina",
-    "name": "Patrick Jhoel Pina",
+    }, 
+     
+     {
+    "number": 15,
+    "playerId": "stemmi",
+    "name": "Luca Stemmi",
     "group": "C",
     "role": "Centrocampista",
-    "statsUrl": "https://www.tuttocampo.it/Lombardia/TerzaCategoria/GironeBMilano/Giocatore/Scheda/10322892/Scheda",
+    "statsUrl": "https://www.tuttocampo.it/Lombardia/TerzaCategoria/GironeBMilano/Giocatore/Scheda/9389752/Scheda",
     "unlockDate": "2026-07-15",
-    "instagramUrl": "pokedex/pokedex_PINA.png"
-    }, {
+    "instagramUrl": "pokedex/pokedex_STEMMI.png"
+    },{
     "number": 16,
     "playerId": "papi",
     "name": "Sora Hector Gomez",
@@ -187,7 +178,18 @@
     "statsUrl": "https://www.tuttocampo.it/Lombardia/TerzaCategoria/GironeBMilano/Giocatore/Scheda/7620046/Scheda",
     "unlockDate": "2026-07-15",
     "instagramUrl": "pokedex/pokedex_THIAS.png"
-    },{
+    },
+    
+    {
+    "number": 20,
+    "playerId": "pina",
+    "name": "Patrick Jhoel Pina",
+    "group": "C",
+    "role": "Centrocampista",
+    "statsUrl": "https://www.tuttocampo.it/Lombardia/TerzaCategoria/GironeBMilano/Giocatore/Scheda/10322892/Scheda",
+    "unlockDate": "2026-07-15",
+    "instagramUrl": "pokedex/pokedex_PINA.png"
+    }, {
     "number": 21,
     "playerId": "vela",
     "name": "Emanuele Velardo",
