@@ -86,7 +86,7 @@
     "instagramUrl": "pokedex/pokedex_CAZZA.png"
     },  
      {
-    "number": 10,
+    "number": 15,
     "playerId": "stemmi",
     "name": "Luca Stemmi",
     "group": "C",
@@ -132,7 +132,7 @@
     "unlockDate": "2026-07-15",
     "instagramUrl": "pokedex/pokedex_LONGO.png"
     }, {
-    "number": 15,
+    "number": 10,
     "playerId": "cafiero",
     "name": "Nicolò Cafiero",
     "group": "D",
@@ -143,7 +143,7 @@
     },
 
     {
-    "number": 16,
+    "number": 20,
     "playerId": "pina",
     "name": "Patrick Jhoel Pina",
     "group": "C",
@@ -152,7 +152,7 @@
     "unlockDate": "2026-07-15",
     "instagramUrl": "pokedex/pokedex_PINA.png"
     }, {
-    "number": 17,
+    "number": 16,
     "playerId": "papi",
     "name": "Sora Hector Gomez",
     "group": "C",
@@ -161,7 +161,7 @@
     "unlockDate": "2026-07-15",
     "instagramUrl": "pokedex/pokedex_PAPI.png"
     },{
-    "number": 18,
+    "number": 17,
     "playerId": "j",
     "name": "Giorgio Meregalli",
     "group": "C",
@@ -170,7 +170,7 @@
     "unlockDate": "2026-07-15",
     "instagramUrl": "pokedex/pokedex_J.png"
     },{
-    "number": 19,
+    "number": 18,
     "playerId": "ghirlo",
     "name": "Alessandro Ghirlandi",
     "group": "C",
@@ -179,7 +179,7 @@
     "unlockDate": "2026-07-15",
     "instagramUrl": "pokedex/pokedex_GHIRLO.png"
     },{
-    "number": 20,
+    "number": 19,
     "playerId": "thias",
     "name": "Mathias Giannoni",
     "group": "C",
