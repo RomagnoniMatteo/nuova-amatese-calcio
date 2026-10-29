@@ -100,6 +100,15 @@
 
   /*
   
+   {
+    "id": "ep-10",
+    "number": 10,
+    "date": "2026-11-5",
+    "title": "Che sofferenza.",
+    "imgCover": "cover/giorgi.png",
+    "instagramUrl": null
+  }
+  
   {
     "id": "ep-16",
     "number": 16,
@@ -237,6 +246,10 @@
 
   /**
    * licenziamento prima di loris, mistero delle pietre ecc. sospeso.
+   *
+   * 31/10 film
+   * 
+   * 6/12 seba cronache p.2
    * 
    * 15/12 inzo licenziamento
    * 
@@ -244,7 +257,7 @@
    * 
    * 17/12 pashy agg
    * 
-   * 18/12 ???
+   * 18/12 seba cronache p.3
    * 
    * 19/12 pokedex
    * 
@@ -258,6 +271,6 @@
    * 
    * 25/12 buon natale
    * 
-   * 29/12 nonno paul chiude
+   * 29/12 nonno paul chiude stagione 1
    * 
    */

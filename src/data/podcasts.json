@@ -66,7 +66,7 @@
    {
     "id": "ep-09",
     "number": 9,
-    "date": "2026-10-29",
+    "date": "2026-11-05",
     "title": "Prospettiva relativa.",
     "imgCover":  "cover/cenda.png",
     "instagramUrl": null
@@ -74,45 +74,37 @@
    {
     "id": "ep-10",
     "number": 10,
-    "date": "2026-11-5",
-    "title": "Che sofferenza.",
-    "imgCover": "cover/giorgi.png",
-    "instagramUrl": null
-  },
-   {
-    "id": "ep-11",
-    "number": 11,
     "date": "2026-11-12",
     "title": "Il sindacato degli esclusi",
     "imgCover": "cover/berta.png",
     "instagramUrl": null
   }
   , {
-    "id": "ep-12",
-    "number": 12,
+    "id": "ep-11",
+    "number": 11,
     "date": "2026-11-19",
     "title": "Barzellette.",
     "imgCover": "cover/cenda.png",
     "instagramUrl": null
   }, {
-    "id": "ep-13",
-    "number": 13,
+    "id": "ep-12",
+    "number": 12,
     "date": "2026-11-26",
     "title": "Gli egizi.",
     "imgCover": "cover/marti.png",
     "instagramUrl": null
   },
    {
-    "id": "ep-14",
-    "number": 14,
+    "id": "ep-13",
+    "number": 13,
     "date": "2026-12-03",
     "title": "Cos'è il direttivo?",
     "imgCover": "cover/pres.png",
     "instagramUrl": null
   },
    {
-    "id": "ep-15",
-    "number": 15,
+    "id": "ep-14",
+    "number": 14,
     "date": "2026-12-10",
     "title": "Minacce.",
     "imgCover": "cover/berta.png",
