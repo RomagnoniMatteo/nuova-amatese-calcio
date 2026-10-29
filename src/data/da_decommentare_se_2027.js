@@ -245,23 +245,20 @@
 
 
   /**
-   * licenziamento prima di loris, mistero delle pietre ecc. sospeso.
-   *
-   * 31/10 film
    * 
-   * 6/12 seba cronache p.2
+   * 6/12 peak che dice aura (se vinciamo il 5, altrimenti niente)
    * 
    * 15/12 inzo licenziamento
    * 
-   * 16/12 pokedex
+   * 16/12 pokedex -> da qui cambiare bio ig
    * 
    * 17/12 pashy agg
    * 
-   * 18/12 seba cronache p.3
+   * 18/12 fine gaia e pashy (rimuovere fatto peak)
    * 
    * 19/12 pokedex
    * 
-   * 20/12 giocano
+   * 20/12 partita
    * 
    * 21/12 pokedex
    * 
@@ -271,6 +268,6 @@
    * 
    * 25/12 buon natale
    * 
-   * 29/12 nonno paul chiude stagione 1
+   * 28/12 nonno paul chiude stagione 1
    * 
    */
