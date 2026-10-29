@@ -197,7 +197,7 @@
     "role": "Centrocampista",
     "statsUrl": "https://www.tuttocampo.it/Lombardia/TerzaCategoria/GironeBMilano/Giocatore/Scheda/7573869/Scheda",
     "unlockDate": "2026-07-15",
-    "instagramUrl": null
+    "instagramUrl":  "pokedex/pokedex_VELA.png"
     },{
     "number": 22,
     "playerId": "bonvi",
@@ -206,7 +206,7 @@
     "role": "Centrocampista",
     "statsUrl": "https://www.tuttocampo.it/Lombardia/TerzaCategoria/GironeBMilano/Giocatore/Scheda/8687888/Scheda",
     "unlockDate": "2026-07-15",
-    "instagramUrl": null
+    "instagramUrl":  "pokedex/pokedex_BONVI.png"
     },{
     "number": 23,
     "playerId": "vaghi",
@@ -215,7 +215,7 @@
     "role": "Centrocampista",
     "statsUrl": "https://www.tuttocampo.it/Lombardia/TerzaCategoria/GironeBMilano/Giocatore/Scheda/8268144/Scheda",
     "unlockDate": "2026-07-15",
-    "instagramUrl": null
+    "instagramUrl":  "pokedex/pokedex_VAGHI.png"
     },{
     "number": 24,
     "playerId": "terno",
@@ -224,7 +224,7 @@
     "role": "Centrocampista",
     "statsUrl": "https://www.tuttocampo.it/Lombardia/TerzaCategoria/GironeBMilano/Giocatore/Scheda/7876097/Scheda",
     "unlockDate": "2026-07-15",
-    "instagramUrl": null
+    "instagramUrl":  "pokedex/pokedex_TERNO.png"
     },
     {
     "number": 25,
@@ -234,7 +234,7 @@
     "role": "Centrocampista",
     "statsUrl": "https://www.tuttocampo.it/Lombardia/TerzaCategoria/GironeBMilano/Giocatore/Scheda/7971388/Scheda",
     "unlockDate": "2026-07-15",
-    "instagramUrl": null
+    "instagramUrl":  "pokedex/pokedex_MARCHE.png"
     },{
     "number": 26,
     "playerId": "alaimo",
@@ -243,10 +243,8 @@
     "role": "Attaccante",
     "statsUrl": "https://www.tuttocampo.it/Lombardia/TerzaCategoria/GironeBMilano/Giocatore/Scheda/10415691/Scheda",
     "unlockDate": "2026-07-15",
-    "instagramUrl": null
+    "instagramUrl":  "pokedex/pokedex_ALA.png"
     },
-
-
 
 
     {
@@ -257,7 +255,7 @@
     "role": "Attaccante",
     "statsUrl": "https://www.tuttocampo.it/Lombardia/TerzaCategoria/GironeBMilano/Giocatore/Scheda/10023567/Scheda",
     "unlockDate": "2026-07-15",
-    "instagramUrl": null
+    "instagramUrl":  "pokedex/pokedex_ERIK.png"
     },  {
     "number": 28,
     "playerId": "flo",
@@ -266,7 +264,7 @@
     "role": "Attaccante",
     "statsUrl": "https://www.tuttocampo.it/Lombardia/TerzaCategoria/GironeBMilano/Giocatore/Scheda/10168129/Scheda",
     "unlockDate": "2026-07-15",
-    "instagramUrl": null
+    "instagramUrl":  "pokedex/pokedex_FLO.png"
     }, {
     "number": 29,
     "playerId": "visma",
@@ -275,7 +273,7 @@
     "role": "Attaccante",
     "statsUrl": "https://www.tuttocampo.it/Lombardia/TerzaCategoria/GironeBMilano/Giocatore/Scheda/9903700/Scheda",
     "unlockDate": "2026-07-15",
-    "instagramUrl": null
+    "instagramUrl":  "pokedex/pokedex_VISMA.png"
     }, {
     "number": 30,
     "playerId": "zini",
@@ -284,7 +282,7 @@
     "role": "Attaccante",
     "statsUrl": "https://www.tuttocampo.it/Lombardia/TerzaCategoria/GironeBMilano/Giocatore/Scheda/7521875/Scheda",
     "unlockDate": "2026-07-15",
-    "instagramUrl": null
+    "instagramUrl":  "pokedex/pokedex_ZINI.png"
     }, {
     "number": 31,
     "playerId": "seba",
@@ -293,7 +291,7 @@
     "role": "Attaccante",
     "statsUrl": "https://www.tuttocampo.it/Lombardia/TerzaCategoria/GironeBMilano/Giocatore/Scheda/10185815/Scheda",
     "unlockDate": "2026-07-15",
-    "instagramUrl": null
+    "instagramUrl":  "pokedex/pokedex_SEBA.png"
     }, {
     "number": 32,
     "playerId": "fallu",
@@ -302,6 +300,6 @@
     "role": "Attaccante",
     "statsUrl": "https://www.tuttocampo.it/Lombardia/TerzaCategoria/GironeBMilano/Giocatore/Scheda/8243329/Scheda",
     "unlockDate": "2026-07-15",
-    "instagramUrl": null
+    "instagramUrl":  "pokedex/pokedex_FALLU.png"
     }
 ]

@@ -1,6 +1,15 @@
 // episodi:
 
 /*
+
+   {
+    "id": "ep-27",
+    "number": 27,
+    "date": "2026-12-22",
+    "title": "Eccovi, finalmente.",
+    "instagramUrl": null
+  },
+
    {
     "id": "ep-29",
     "number": 29,
@@ -229,13 +238,23 @@
   /**
    * licenziamento prima di loris, mistero delle pietre ecc. sospeso.
    * 
+   * 15/12 inzo licenziamento
+   * 
+   * 16/12 pokedex
+   * 
    * 17/12 pashy agg
+   * 
+   * 18/12 ???
+   * 
+   * 19/12 pokedex
    * 
    * 20/12 giocano
    * 
+   * 21/12 pokedex
+   * 
    * 22/12 ceruleo
    * 
-   * 23/12: pubblicare ultimi pokedex 
+   * 23/12: pokedex 
    * 
    * 25/12 buon natale
    * 
