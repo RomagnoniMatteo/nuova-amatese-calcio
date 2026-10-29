@@ -191,15 +191,6 @@
     "instagramUrl": "pokedex/pokedex_PINA.png"
     }, {
     "number": 21,
-    "playerId": "vela",
-    "name": "Emanuele Velardo",
-    "group": "C",
-    "role": "Centrocampista",
-    "statsUrl": "https://www.tuttocampo.it/Lombardia/TerzaCategoria/GironeBMilano/Giocatore/Scheda/7573869/Scheda",
-    "unlockDate": "2026-07-15",
-    "instagramUrl":  "pokedex/pokedex_VELA.png"
-    },{
-    "number": 22,
     "playerId": "bonvi",
     "name": "Mattia Bonvino",
     "group": "C",
@@ -207,6 +198,15 @@
     "statsUrl": "https://www.tuttocampo.it/Lombardia/TerzaCategoria/GironeBMilano/Giocatore/Scheda/8687888/Scheda",
     "unlockDate": "2026-07-15",
     "instagramUrl":  "pokedex/pokedex_BONVI.png"
+    },{
+    "number": 22,
+    "playerId": "vela",
+    "name": "Emanuele Velardo",
+    "group": "C",
+    "role": "Centrocampista",
+    "statsUrl": "https://www.tuttocampo.it/Lombardia/TerzaCategoria/GironeBMilano/Giocatore/Scheda/7573869/Scheda",
+    "unlockDate": "2026-07-15",
+    "instagramUrl":  "pokedex/pokedex_VELA.png"
     },{
     "number": 23,
     "playerId": "vaghi",
@@ -237,18 +237,6 @@
     "instagramUrl":  "pokedex/pokedex_MARCHE.png"
     },{
     "number": 26,
-    "playerId": "alaimo",
-    "name": "Emanuele Alaimo",
-    "group": "A",
-    "role": "Attaccante",
-    "statsUrl": "https://www.tuttocampo.it/Lombardia/TerzaCategoria/GironeBMilano/Giocatore/Scheda/10415691/Scheda",
-    "unlockDate": "2026-07-15",
-    "instagramUrl":  "pokedex/pokedex_ALA.png"
-    },
-
-
-    {
-    "number": 27,
     "playerId": "enava",
     "name": "Erik Nava",
     "group": "A",
@@ -257,7 +245,7 @@
     "unlockDate": "2026-07-15",
     "instagramUrl":  "pokedex/pokedex_ERIK.png"
     },  {
-    "number": 28,
+    "number": 27,
     "playerId": "flo",
     "name": "Flavio Hoxha",
     "group": "A",
@@ -266,7 +254,7 @@
     "unlockDate": "2026-07-15",
     "instagramUrl":  "pokedex/pokedex_FLO.png"
     }, {
-    "number": 29,
+    "number": 28,
     "playerId": "visma",
     "name": "Mattia Vismara",
     "group": "A",
@@ -275,7 +263,7 @@
     "unlockDate": "2026-07-15",
     "instagramUrl":  "pokedex/pokedex_VISMA.png"
     }, {
-    "number": 30,
+    "number": 29,
     "playerId": "zini",
     "name": "Adriano Zini",
     "group": "A",
@@ -283,6 +271,15 @@
     "statsUrl": "https://www.tuttocampo.it/Lombardia/TerzaCategoria/GironeBMilano/Giocatore/Scheda/7521875/Scheda",
     "unlockDate": "2026-07-15",
     "instagramUrl":  "pokedex/pokedex_ZINI.png"
+    },{
+    "number": 30,
+    "playerId": "alaimo",
+    "name": "Emanuele Alaimo",
+    "group": "A",
+    "role": "Attaccante",
+    "statsUrl": "https://www.tuttocampo.it/Lombardia/TerzaCategoria/GironeBMilano/Giocatore/Scheda/10415691/Scheda",
+    "unlockDate": "2026-07-15",
+    "instagramUrl":  "pokedex/pokedex_ALA.png"
     }, {
     "number": 31,
     "playerId": "seba",
