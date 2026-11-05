@@ -70,44 +70,5 @@
     "title": "Prospettiva relativa.",
     "imgCover":  "cover/cenda.png",
     "instagramUrl": "https://www.instagram.com/DfE9WPnkZvQ"
-  },
-   {
-    "id": "ep-10",
-    "number": 10,
-    "date": "2026-11-12",
-    "title": "Il sindacato degli esclusi",
-    "imgCover": "cover/berta.png",
-    "instagramUrl": null
-  }
-  , {
-    "id": "ep-11",
-    "number": 11,
-    "date": "2026-11-19",
-    "title": "Barzellette.",
-    "imgCover": "cover/cenda.png",
-    "instagramUrl": null
-  }, {
-    "id": "ep-12",
-    "number": 12,
-    "date": "2026-11-26",
-    "title": "Gli egizi.",
-    "imgCover": "cover/marti.png",
-    "instagramUrl": null
-  },
-   {
-    "id": "ep-13",
-    "number": 13,
-    "date": "2026-12-03",
-    "title": "Cos'è il direttivo?",
-    "imgCover": "cover/pres.png",
-    "instagramUrl": null
-  },
-   {
-    "id": "ep-14",
-    "number": 14,
-    "date": "2026-12-10",
-    "title": "Minacce.",
-    "imgCover": "cover/berta.png",
-    "instagramUrl": null
   }
 ]

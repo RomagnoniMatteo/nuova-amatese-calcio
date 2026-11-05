@@ -238,6 +238,108 @@
     "instagramUrl": null
   }
 
+
+
+
+
+  
+  {
+    "id": "ep-21",
+    "number": 21,
+    "date": "2026-11-10",
+    "title": "Il '74",
+    "instagramUrl": null
+  },
+  {
+    "id": "ep-22",
+    "number": 22,
+    "date": "2026-11-17",
+    "title": "Il silenzio pesa diverso.",
+    "instagramUrl": null
+  },
+  {
+    "id": "ep-23",
+    "number": 23,
+    "date": "2026-11-24",
+    "title": "Il resto deve venire dopo.",
+    "instagramUrl": null
+  },
+  {
+    "id": "ep-24",
+    "number": 24,
+    "date": "2026-12-01",
+    "title": "Il direttivo.",
+    "instagramUrl": null
+  },
+   {
+    "id": "ep-25",
+    "number": 25,
+    "date": "2026-12-08",
+    "title": "Solo promesse.",
+    "instagramUrl": null
+  },
+   {
+    "id": "ep-26",
+    "number": 26,
+    "date": "2026-12-15",
+    "title": "I peggiori villain della storia.",
+    "instagramUrl": null
+  },
+     {
+    "id": "ep-27",
+    "number": 27,
+    "date": "2026-12-18",
+    "title": "Aura.",
+    "instagramUrl": null
+  },
+   {
+    "id": "ep-28",
+    "number": 28,
+    "date": "2026-12-28",
+    "title": "Il resto si lascia sotto terra.",
+    "instagramUrl": null
+  }
+
+  
+   {
+    "id": "ep-10",
+    "number": 10,
+    "date": "2026-11-12",
+    "title": "Il sindacato degli esclusi",
+    "imgCover": "cover/berta.png",
+    "instagramUrl": null
+  }
+  , {
+    "id": "ep-11",
+    "number": 11,
+    "date": "2026-11-19",
+    "title": "Barzellette.",
+    "imgCover": "cover/cenda.png",
+    "instagramUrl": null
+  }, {
+    "id": "ep-12",
+    "number": 12,
+    "date": "2026-11-26",
+    "title": "Gli egizi.",
+    "imgCover": "cover/marti.png",
+    "instagramUrl": null
+  },
+   {
+    "id": "ep-13",
+    "number": 13,
+    "date": "2026-12-03",
+    "title": "Cos'è il direttivo?",
+    "imgCover": "cover/pres.png",
+    "instagramUrl": null
+  },
+   {
+    "id": "ep-14",
+    "number": 14,
+    "date": "2026-12-10",
+    "title": "Minacce.",
+    "imgCover": "cover/berta.png",
+    "instagramUrl": null
+  }
   */
 
 
